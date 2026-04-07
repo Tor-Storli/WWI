@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "WWI"."main"."Customer" ("Customer Key" integer,"WWI Customer ID" integer,"Customer" text,"Bill To Customer" text,"Category" text,"Buying Group" text,"Primary Contact" text,"Postal Code" text,"Valid From" text,"Valid To" text,"Lineage Key" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "WWI"."main"."Customer" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\Customer.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

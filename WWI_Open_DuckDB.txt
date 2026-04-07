@@ -1,0 +1,7 @@
+.open 'C:/Users/storl/Desktop/WWI/wwi_duckdb/wwi_duckdb/WWI.duckdb';
+
+show tables;
+
+Select database_name, schema_name, view_name,  column_count from duckdb_views where database_name = 'WWI';
+
+Select database_name, schema_name, table_name,  column_count from duckdb_tables where database_name = 'WWI';

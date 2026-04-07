@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "WWI"."main"."StockItem" ("Stock Item Key" integer,"WWI Stock Item ID" integer,"Stock Item" text,"Color" text,"Selling Package" text,"Buying Package" text,"Brand" text,"Size" text,"Lead Time Days" integer,"Quantity Per Outer" integer,"Is Chiller Stock" integer,"Barcode" text,"Tax Rate" integer,"Unit Price" float8,"Recommended Retail Price" float8,"Typical Weight Per Unit" float8,"Photo" integer,"Valid From" text,"Valid To" text,"Lineage Key" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "WWI"."main"."StockItem" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\StockItem.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

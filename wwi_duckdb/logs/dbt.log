@@ -1,0 +1,1649 @@
+[0m11:24:04.587180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8817B6780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B88167FA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B88285E540>]}
+
+
+============================== 11:24:04.604858 | f78d323e-978f-4c96-b68c-2270c088e576 ==============================
+[0m11:24:04.604858 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:24:04.605846 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init wwi_duckdb', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:24:04.790860 [debug] [MainThread]: Starter project path: C:\Users\storl\Desktop\WWI\wwi_duckdb\venv\Lib\site-packages\dbt\include\starter_project
+[0m11:24:04.832836 [info ] [MainThread]: 
+Your new dbt project "wwi_duckdb" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:24:04.834900 [info ] [MainThread]: Setting up your profile.
+[0m11:24:36.087437 [debug] [MainThread]: Command `dbt init` succeeded at 11:24:36.087437 after 31.83 seconds
+[0m11:24:36.088434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B883DEB770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B882B01B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8821D6A50>]}
+[0m11:24:36.089434 [debug] [MainThread]: Flushing usage events
+[0m11:24:38.132924 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:31:57.695315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295AD112330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295AD7E0410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295AD0A1E20>]}
+
+
+============================== 11:31:57.700329 | f9e3eb6a-c05f-4066-ae72-33ddbf61cb19 ==============================
+[0m11:31:57.700329 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:31:57.701327 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:31:57.735106 [info ] [MainThread]: dbt version: 1.11.7
+[0m11:31:57.735106 [info ] [MainThread]: python version: 3.12.2
+[0m11:31:57.736163 [info ] [MainThread]: python path: C:\Users\storl\Desktop\WWI\wwi_duckdb\venv\Scripts\python.exe
+[0m11:31:57.736163 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m11:31:57.874435 [info ] [MainThread]: Using profiles dir at C:\Users\storl\.dbt
+[0m11:31:57.875574 [info ] [MainThread]: Using profiles.yml file at C:\Users\storl\.dbt\profiles.yml
+[0m11:31:57.875574 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\storl\Desktop\WWI\wwi_duckdb\dbt_project.yml
+[0m11:31:57.878416 [info ] [MainThread]: adapter type: duckdb
+[0m11:31:57.879417 [info ] [MainThread]: adapter version: 1.10.1
+[0m11:31:57.880431 [info ] [MainThread]: Configuration:
+[0m11:31:57.880431 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:31:57.881556 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:31:57.881556 [info ] [MainThread]: Required dependencies:
+[0m11:31:57.881556 [debug] [MainThread]: Executing "git --help"
+[0m11:31:57.954625 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:31:57.954625 [debug] [MainThread]: STDERR: "b''"
+[0m11:31:57.955626 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:31:57.956623 [info ] [MainThread]: Connection:
+[0m11:31:57.956623 [info ] [MainThread]:   database: WWI
+[0m11:31:57.957622 [info ] [MainThread]:   schema: main
+[0m11:31:57.957622 [info ] [MainThread]:   path: WWI.duckdb
+[0m11:31:57.958623 [info ] [MainThread]:   config_options: None
+[0m11:31:57.959671 [info ] [MainThread]:   extensions: None
+[0m11:31:57.959671 [info ] [MainThread]:   settings: {}
+[0m11:31:57.960673 [info ] [MainThread]:   external_root: .
+[0m11:31:57.960673 [info ] [MainThread]:   use_credential_provider: None
+[0m11:31:57.961628 [info ] [MainThread]:   attach: None
+[0m11:31:57.961628 [info ] [MainThread]:   filesystems: None
+[0m11:31:57.963239 [info ] [MainThread]:   remote: None
+[0m11:31:57.964320 [info ] [MainThread]:   plugins: None
+[0m11:31:57.964320 [info ] [MainThread]:   disable_transactions: False
+[0m11:31:57.965253 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m11:31:58.173319 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m11:31:58.268509 [debug] [MainThread]: Using duckdb connection "debug"
+[0m11:31:58.269462 [debug] [MainThread]: On debug: select 1 as id
+[0m11:31:58.269462 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:31:58.290511 [debug] [MainThread]: SQL status: OK in 0.021 seconds
+[0m11:31:58.292044 [debug] [MainThread]: On debug: Close
+[0m11:31:58.293071 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:31:58.293071 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:31:58.294077 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\storl\Desktop\WWI\wwi_duckdb\dbt_project.yml> not found
+
+[0m11:31:58.295074 [debug] [MainThread]: Command `dbt debug` failed at 11:31:58.295074 after 0.86 seconds
+[0m11:31:58.295074 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:31:58.296073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295A9D87C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295AD83E840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295AC33FE90>]}
+[0m11:31:58.296073 [debug] [MainThread]: Flushing usage events
+[0m11:32:08.097416 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:32:33.171729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177F879E300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177F836A1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177F8369940>]}
+
+
+============================== 11:32:33.183327 | 45e075f0-16ed-4234-84bb-b09a263c97c2 ==============================
+[0m11:32:33.183327 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:32:33.185335 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:32:33.213199 [info ] [MainThread]: dbt version: 1.11.7
+[0m11:32:33.213199 [info ] [MainThread]: python version: 3.12.2
+[0m11:32:33.214206 [info ] [MainThread]: python path: C:\Users\storl\Desktop\WWI\wwi_duckdb\venv\Scripts\python.exe
+[0m11:32:33.215201 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m11:32:33.359335 [info ] [MainThread]: Using profiles dir at C:\Users\storl\.dbt
+[0m11:32:33.360328 [info ] [MainThread]: Using profiles.yml file at C:\Users\storl\.dbt\profiles.yml
+[0m11:32:33.361396 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\storl\Desktop\WWI\wwi_duckdb\dbt_project.yml
+[0m11:32:33.363931 [info ] [MainThread]: adapter type: duckdb
+[0m11:32:33.363931 [info ] [MainThread]: adapter version: 1.10.1
+[0m11:32:33.364932 [info ] [MainThread]: Configuration:
+[0m11:32:33.365930 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:32:33.365930 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:32:33.366932 [info ] [MainThread]: Required dependencies:
+[0m11:32:33.366932 [debug] [MainThread]: Executing "git --help"
+[0m11:32:33.419627 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:32:33.420653 [debug] [MainThread]: STDERR: "b''"
+[0m11:32:33.420653 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:32:33.422160 [info ] [MainThread]: Connection:
+[0m11:32:33.422160 [info ] [MainThread]:   database: WWI
+[0m11:32:33.423181 [info ] [MainThread]:   schema: main
+[0m11:32:33.423181 [info ] [MainThread]:   path: WWI.duckdb
+[0m11:32:33.424700 [info ] [MainThread]:   config_options: None
+[0m11:32:33.424700 [info ] [MainThread]:   extensions: None
+[0m11:32:33.424700 [info ] [MainThread]:   settings: {}
+[0m11:32:33.425722 [info ] [MainThread]:   external_root: .
+[0m11:32:33.426721 [info ] [MainThread]:   use_credential_provider: None
+[0m11:32:33.426721 [info ] [MainThread]:   attach: None
+[0m11:32:33.427725 [info ] [MainThread]:   filesystems: None
+[0m11:32:33.427725 [info ] [MainThread]:   remote: None
+[0m11:32:33.428724 [info ] [MainThread]:   plugins: None
+[0m11:32:33.429722 [info ] [MainThread]:   disable_transactions: False
+[0m11:32:33.430716 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m11:32:33.674288 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m11:32:33.736475 [debug] [MainThread]: Using duckdb connection "debug"
+[0m11:32:33.736475 [debug] [MainThread]: On debug: select 1 as id
+[0m11:32:33.737637 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:32:33.751045 [debug] [MainThread]: SQL status: OK in 0.014 seconds
+[0m11:32:33.753161 [debug] [MainThread]: On debug: Close
+[0m11:32:33.753161 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:32:33.754183 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:32:33.754183 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\storl\Desktop\WWI\wwi_duckdb\dbt_project.yml> not found
+
+[0m11:32:33.755181 [debug] [MainThread]: Command `dbt debug` failed at 11:32:33.755181 after 0.81 seconds
+[0m11:32:33.756237 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:32:33.756237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177F9C483E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177F8804FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177FA047230>]}
+[0m11:32:33.756237 [debug] [MainThread]: Flushing usage events
+[0m11:32:45.328226 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:19:45.119214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027109C2D970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027109C2F2F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027109C2C560>]}
+
+
+============================== 12:19:45.127756 | 81f684dc-4bef-4dc0-b66a-d02f87843dd0 ==============================
+[0m12:19:45.127756 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:19:45.129766 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt seed', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\storl\\Desktop\\WWI\\wwi_duckdb\\logs'}
+[0m12:19:45.409991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271095E7230>]}
+[0m12:19:45.478860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710B317CE0>]}
+[0m12:19:45.480860 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:19:45.686268 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m12:19:45.688445 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:19:45.689447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710B75CAD0>]}
+[0m12:19:47.137029 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.wwi_duckdb.production
+- models.wwi_duckdb.staging
+[0m12:19:47.142030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710B793E60>]}
+[0m12:19:47.250503 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\manifest.json
+[0m12:19:47.254025 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\semantic_manifest.json
+[0m12:19:47.277755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710BC47D40>]}
+[0m12:19:47.277755 [info ] [MainThread]: Found 2 models, 7 seeds, 4 data tests, 475 macros
+[0m12:19:47.278751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710BDF6F60>]}
+[0m12:19:47.280751 [info ] [MainThread]: 
+[0m12:19:47.281757 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:19:47.281757 [info ] [MainThread]: 
+[0m12:19:47.282753 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:19:47.290875 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_WWI'
+[0m12:19:47.360974 [debug] [ThreadPool]: Using duckdb connection "list_WWI"
+[0m12:19:47.361971 [debug] [ThreadPool]: On list_WWI: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "list_WWI"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"wwi"'
+    
+  
+  
+[0m12:19:47.361971 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:19:47.392097 [debug] [ThreadPool]: SQL status: OK in 0.030 seconds
+[0m12:19:47.393604 [debug] [ThreadPool]: On list_WWI: Close
+[0m12:19:47.394611 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_WWI, now create_WWI_main)
+[0m12:19:47.394611 [debug] [ThreadPool]: Creating schema "database: "WWI"
+schema: "main"
+"
+[0m12:19:47.401609 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:19:47.401609 [debug] [ThreadPool]: On create_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "create_WWI_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='wwi'
+        and type='sqlite'
+    
+  
+[0m12:19:47.401609 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:19:47.402608 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:19:47.404678 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:19:47.405191 [debug] [ThreadPool]: On create_WWI_main: BEGIN
+[0m12:19:47.405191 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:19:47.406198 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:19:47.406198 [debug] [ThreadPool]: On create_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "create_WWI_main"} */
+
+    
+    
+        create schema if not exists "WWI"."main"
+    
+[0m12:19:47.407197 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:19:47.407197 [debug] [ThreadPool]: On create_WWI_main: COMMIT
+[0m12:19:47.408198 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:19:47.408198 [debug] [ThreadPool]: On create_WWI_main: COMMIT
+[0m12:19:47.409196 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:19:47.409196 [debug] [ThreadPool]: On create_WWI_main: Close
+[0m12:19:47.411193 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_WWI_main'
+[0m12:19:47.416703 [debug] [ThreadPool]: Using duckdb connection "list_WWI_main"
+[0m12:19:47.417702 [debug] [ThreadPool]: On list_WWI_main: BEGIN
+[0m12:19:47.417702 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:19:47.417702 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:19:47.419206 [debug] [ThreadPool]: Using duckdb connection "list_WWI_main"
+[0m12:19:47.419206 [debug] [ThreadPool]: On list_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "list_WWI_main"} */
+select
+      'WWI' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'wwi'
+  
+[0m12:19:47.422220 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m12:19:47.424758 [debug] [ThreadPool]: On list_WWI_main: ROLLBACK
+[0m12:19:47.425757 [debug] [ThreadPool]: Failed to rollback 'list_WWI_main'
+[0m12:19:47.426755 [debug] [ThreadPool]: On list_WWI_main: Close
+[0m12:19:47.427747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027106FD4350>]}
+[0m12:19:47.427747 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:19:47.428755 [debug] [MainThread]: On master: BEGIN
+[0m12:19:47.428755 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:19:47.429754 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:19:47.429754 [debug] [MainThread]: On master: COMMIT
+[0m12:19:47.429754 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:19:47.430757 [debug] [MainThread]: On master: COMMIT
+[0m12:19:47.430757 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:19:47.431755 [debug] [MainThread]: On master: Close
+[0m12:19:47.447774 [debug] [Thread-1 (]: Began running node seed.wwi_duckdb.City
+[0m12:19:47.447774 [debug] [Thread-2 (]: Began running node seed.wwi_duckdb.Customer
+[0m12:19:47.448774 [debug] [Thread-3 (]: Began running node seed.wwi_duckdb.Date
+[0m12:19:47.448774 [debug] [Thread-4 (]: Began running node seed.wwi_duckdb.Employee
+[0m12:19:47.449774 [info ] [Thread-1 (]: 1 of 7 START seed file main.City ............................................... [RUN]
+[0m12:19:47.449774 [info ] [Thread-2 (]: 2 of 7 START seed file main.Customer ........................................... [RUN]
+[0m12:19:47.450774 [info ] [Thread-3 (]: 3 of 7 START seed file main.Date ............................................... [RUN]
+[0m12:19:47.451774 [info ] [Thread-4 (]: 4 of 7 START seed file main.Employee ........................................... [RUN]
+[0m12:19:47.451774 [debug] [Thread-1 (]: Acquiring new duckdb connection 'seed.wwi_duckdb.City'
+[0m12:19:47.452775 [debug] [Thread-2 (]: Acquiring new duckdb connection 'seed.wwi_duckdb.Customer'
+[0m12:19:47.452775 [debug] [Thread-3 (]: Acquiring new duckdb connection 'seed.wwi_duckdb.Date'
+[0m12:19:47.453931 [debug] [Thread-4 (]: Acquiring new duckdb connection 'seed.wwi_duckdb.Employee'
+[0m12:19:47.454926 [debug] [Thread-1 (]: Began compiling node seed.wwi_duckdb.City
+[0m12:19:47.454926 [debug] [Thread-2 (]: Began compiling node seed.wwi_duckdb.Customer
+[0m12:19:47.455928 [debug] [Thread-3 (]: Began compiling node seed.wwi_duckdb.Date
+[0m12:19:47.455928 [debug] [Thread-4 (]: Began compiling node seed.wwi_duckdb.Employee
+[0m12:19:47.456930 [debug] [Thread-1 (]: Began executing node seed.wwi_duckdb.City
+[0m12:19:47.456930 [debug] [Thread-2 (]: Began executing node seed.wwi_duckdb.Customer
+[0m12:19:47.457927 [debug] [Thread-3 (]: Began executing node seed.wwi_duckdb.Date
+[0m12:19:47.458926 [debug] [Thread-4 (]: Began executing node seed.wwi_duckdb.Employee
+[0m12:19:47.508714 [debug] [Thread-2 (]: Using duckdb connection "seed.wwi_duckdb.Customer"
+[0m12:19:47.521233 [debug] [Thread-2 (]: On seed.wwi_duckdb.Customer: BEGIN
+[0m12:19:47.631876 [debug] [Thread-4 (]: Using duckdb connection "seed.wwi_duckdb.Employee"
+[0m12:19:47.721522 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:19:47.765047 [debug] [Thread-4 (]: On seed.wwi_duckdb.Employee: BEGIN
+[0m12:19:47.842287 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m12:19:47.853357 [debug] [Thread-2 (]: SQL status: OK in 0.131 seconds
+[0m12:19:47.864358 [debug] [Thread-3 (]: Using duckdb connection "seed.wwi_duckdb.Date"
+[0m12:19:47.879516 [debug] [Thread-4 (]: SQL status: OK in 0.037 seconds
+[0m12:19:47.887034 [debug] [Thread-2 (]: Using duckdb connection "seed.wwi_duckdb.Customer"
+[0m12:19:47.922217 [debug] [Thread-3 (]: On seed.wwi_duckdb.Date: BEGIN
+[0m12:19:47.954272 [debug] [Thread-4 (]: Using duckdb connection "seed.wwi_duckdb.Employee"
+[0m12:19:47.981814 [debug] [Thread-2 (]: On seed.wwi_duckdb.Customer: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "seed.wwi_duckdb.Customer"} */
+
+    create table "WWI"."main"."Customer" ("Customer Key" integer,"WWI Customer ID" integer,"Customer" text,"Bill To Customer" text,"Category" text,"Buying Group" text,"Primary Contact" text,"Postal Code" text,"Valid From" text,"Valid To" text,"Lineage Key" integer)
+  
+[0m12:19:47.987328 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:19:48.112769 [debug] [Thread-4 (]: On seed.wwi_duckdb.Employee: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "seed.wwi_duckdb.Employee"} */
+
+    create table "WWI"."main"."Employee" ("Employee Key" integer,"WWI Employee ID" integer,"Employee" text,"Preferred Name" text,"Is Salesperson" integer,"Photo" integer,"Valid From" text,"Valid To" text,"Lineage Key" integer)
+  
+[0m12:19:48.146828 [debug] [Thread-2 (]: SQL status: OK in 0.017 seconds
+[0m12:19:48.174362 [debug] [Thread-3 (]: SQL status: OK in 0.187 seconds
+[0m12:19:48.229802 [debug] [Thread-4 (]: SQL status: OK in 0.022 seconds
+[0m12:19:48.270357 [debug] [Thread-3 (]: Using duckdb connection "seed.wwi_duckdb.Date"
+[0m12:19:48.304115 [debug] [Thread-4 (]: Using duckdb connection "seed.wwi_duckdb.Employee"
+[0m12:19:48.323504 [debug] [Thread-2 (]: Using duckdb connection "seed.wwi_duckdb.Customer"
+[0m12:19:48.330511 [debug] [Thread-3 (]: On seed.wwi_duckdb.Date: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "seed.wwi_duckdb.Date"} */
+
+    create table "WWI"."main"."Date" ("Date" date,"Day Number" integer,"Day" integer,"Month" text,"Short Month" text,"Calendar Month Number" integer,"Calendar Month Label" text,"Calendar Year" integer,"Calendar Year Label" text,"Fiscal Month Number" integer,"Fiscal Month Label" text,"Fiscal Year" integer,"Fiscal Year Label" text,"ISO Week Number" integer)
+  
+[0m12:19:48.336014 [debug] [Thread-4 (]: On seed.wwi_duckdb.Employee: 
+          COPY "WWI"."main"."Employee" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\Employee.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m12:19:48.372823 [debug] [Thread-2 (]: On seed.wwi_duckdb.Customer: 
+          COPY "WWI"."main"."Customer" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\Customer.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m12:19:48.431550 [debug] [Thread-3 (]: SQL status: OK in 0.021 seconds
+[0m12:19:48.437061 [debug] [Thread-4 (]: SQL status: OK in 0.017 seconds
+[0m12:19:48.452572 [debug] [Thread-2 (]: SQL status: OK in 0.015 seconds
+[0m12:19:48.474531 [debug] [Thread-3 (]: Using duckdb connection "seed.wwi_duckdb.Date"
+[0m12:19:48.523729 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.wwi_duckdb.Employee"
+[0m12:19:48.560261 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.wwi_duckdb.Customer"
+[0m12:19:48.587295 [debug] [Thread-3 (]: On seed.wwi_duckdb.Date: 
+          COPY "WWI"."main"."Date" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\Date.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m12:19:48.690530 [debug] [Thread-3 (]: SQL status: OK in 0.033 seconds
+[0m12:19:48.701523 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.wwi_duckdb.Date"
+[0m12:19:48.774860 [debug] [Thread-2 (]: On seed.wwi_duckdb.Customer: COMMIT
+[0m12:19:48.780877 [debug] [Thread-4 (]: On seed.wwi_duckdb.Employee: COMMIT
+[0m12:19:48.787468 [debug] [Thread-3 (]: On seed.wwi_duckdb.Date: COMMIT
+[0m12:19:48.802982 [debug] [Thread-2 (]: Using duckdb connection "seed.wwi_duckdb.Customer"
+[0m12:19:48.824644 [debug] [Thread-4 (]: Using duckdb connection "seed.wwi_duckdb.Employee"
+[0m12:19:48.825647 [debug] [Thread-3 (]: Using duckdb connection "seed.wwi_duckdb.Date"
+[0m12:19:48.854182 [debug] [Thread-2 (]: On seed.wwi_duckdb.Customer: COMMIT
+[0m12:19:48.865687 [debug] [Thread-4 (]: On seed.wwi_duckdb.Employee: COMMIT
+[0m12:19:48.897741 [debug] [Thread-3 (]: On seed.wwi_duckdb.Date: COMMIT
+[0m12:19:48.945819 [debug] [Thread-2 (]: SQL status: OK in 0.016 seconds
+[0m12:19:48.961839 [debug] [Thread-4 (]: SQL status: OK in 0.027 seconds
+[0m12:19:48.988395 [debug] [Thread-3 (]: SQL status: OK in 0.011 seconds
+[0m12:19:49.005975 [debug] [Thread-2 (]: On seed.wwi_duckdb.Customer: Close
+[0m12:19:49.034498 [debug] [Thread-4 (]: On seed.wwi_duckdb.Employee: Close
+[0m12:19:49.063530 [debug] [Thread-3 (]: On seed.wwi_duckdb.Date: Close
+[0m12:19:49.180857 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027107024D40>]}
+[0m12:19:49.191931 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710D17F380>]}
+[0m12:19:49.219955 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710BAC9D00>]}
+[0m12:19:49.214453 [info ] [Thread-2 (]: 2 of 7 OK loaded seed file main.Customer ....................................... [[32mINSERT 403[0m in 1.65s]
+[0m12:19:49.253996 [info ] [Thread-4 (]: 4 of 7 OK loaded seed file main.Employee ....................................... [[32mINSERT 213[0m in 1.67s]
+[0m12:19:49.270651 [info ] [Thread-3 (]: 3 of 7 OK loaded seed file main.Date ........................................... [[32mINSERT 1461[0m in 1.70s]
+[0m12:19:49.304782 [debug] [Thread-2 (]: Finished running node seed.wwi_duckdb.Customer
+[0m12:19:49.338363 [debug] [Thread-4 (]: Finished running node seed.wwi_duckdb.Employee
+[0m12:19:49.354873 [debug] [Thread-3 (]: Finished running node seed.wwi_duckdb.Date
+[0m12:19:49.384418 [debug] [Thread-2 (]: Began running node seed.wwi_duckdb.PaymentMethod
+[0m12:19:49.406022 [debug] [Thread-4 (]: Began running node seed.wwi_duckdb.Sale
+[0m12:19:49.426811 [debug] [Thread-3 (]: Began running node seed.wwi_duckdb.StockItem
+[0m12:19:49.454349 [info ] [Thread-2 (]: 5 of 7 START seed file main.PaymentMethod ...................................... [RUN]
+[0m12:19:49.471383 [info ] [Thread-4 (]: 6 of 7 START seed file main.Sale ............................................... [RUN]
+[0m12:19:49.496922 [info ] [Thread-3 (]: 7 of 7 START seed file main.StockItem .......................................... [RUN]
+[0m12:19:49.518434 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.wwi_duckdb.Customer, now seed.wwi_duckdb.PaymentMethod)
+[0m12:19:49.555640 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.wwi_duckdb.Employee, now seed.wwi_duckdb.Sale)
+[0m12:19:49.556644 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.wwi_duckdb.Date, now seed.wwi_duckdb.StockItem)
+[0m12:19:49.573684 [debug] [Thread-2 (]: Began compiling node seed.wwi_duckdb.PaymentMethod
+[0m12:19:49.593712 [debug] [Thread-4 (]: Began compiling node seed.wwi_duckdb.Sale
+[0m12:19:49.605835 [debug] [Thread-3 (]: Began compiling node seed.wwi_duckdb.StockItem
+[0m12:19:49.622345 [debug] [Thread-2 (]: Began executing node seed.wwi_duckdb.PaymentMethod
+[0m12:19:49.655882 [debug] [Thread-4 (]: Began executing node seed.wwi_duckdb.Sale
+[0m12:19:49.661884 [debug] [Thread-3 (]: Began executing node seed.wwi_duckdb.StockItem
+[0m12:19:49.706068 [debug] [Thread-2 (]: Using duckdb connection "seed.wwi_duckdb.PaymentMethod"
+[0m12:19:49.740307 [debug] [Thread-2 (]: On seed.wwi_duckdb.PaymentMethod: BEGIN
+[0m12:19:49.746818 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m12:19:49.878834 [debug] [Thread-2 (]: SQL status: OK in 0.132 seconds
+[0m12:19:49.899863 [debug] [Thread-2 (]: Using duckdb connection "seed.wwi_duckdb.PaymentMethod"
+[0m12:19:49.962153 [debug] [Thread-2 (]: On seed.wwi_duckdb.PaymentMethod: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "seed.wwi_duckdb.PaymentMethod"} */
+
+    create table "WWI"."main"."PaymentMethod" ("Payment Method Key" integer,"WWI Payment Method ID" integer,"Payment Method" text,"Valid From" text,"Valid To" text,"Lineage Key" integer)
+  
+[0m12:19:50.100858 [debug] [Thread-3 (]: Using duckdb connection "seed.wwi_duckdb.StockItem"
+[0m12:19:50.100858 [debug] [Thread-3 (]: On seed.wwi_duckdb.StockItem: BEGIN
+[0m12:19:50.101838 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m12:19:50.123845 [debug] [Thread-3 (]: SQL status: OK in 0.022 seconds
+[0m12:19:50.134852 [debug] [Thread-2 (]: SQL status: OK in 0.167 seconds
+[0m12:19:50.190568 [debug] [Thread-3 (]: Using duckdb connection "seed.wwi_duckdb.StockItem"
+[0m12:19:50.223618 [debug] [Thread-2 (]: Using duckdb connection "seed.wwi_duckdb.PaymentMethod"
+[0m12:19:50.238140 [debug] [Thread-3 (]: On seed.wwi_duckdb.StockItem: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "seed.wwi_duckdb.StockItem"} */
+
+    create table "WWI"."main"."StockItem" ("Stock Item Key" integer,"WWI Stock Item ID" integer,"Stock Item" text,"Color" text,"Selling Package" text,"Buying Package" text,"Brand" text,"Size" text,"Lead Time Days" integer,"Quantity Per Outer" integer,"Is Chiller Stock" integer,"Barcode" text,"Tax Rate" integer,"Unit Price" float8,"Recommended Retail Price" float8,"Typical Weight Per Unit" float8,"Photo" integer,"Valid From" text,"Valid To" text,"Lineage Key" integer)
+  
+[0m12:19:50.301842 [debug] [Thread-2 (]: On seed.wwi_duckdb.PaymentMethod: 
+          COPY "WWI"."main"."PaymentMethod" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\PaymentMethod.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m12:19:50.422726 [debug] [Thread-3 (]: SQL status: OK in 0.061 seconds
+[0m12:19:50.433728 [debug] [Thread-2 (]: SQL status: OK in 0.029 seconds
+[0m12:19:50.588287 [debug] [Thread-3 (]: Using duckdb connection "seed.wwi_duckdb.StockItem"
+[0m12:19:50.614855 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.wwi_duckdb.PaymentMethod"
+[0m12:19:50.643795 [debug] [Thread-3 (]: On seed.wwi_duckdb.StockItem: 
+          COPY "WWI"."main"."StockItem" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\StockItem.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m12:19:50.774456 [debug] [Thread-2 (]: On seed.wwi_duckdb.PaymentMethod: COMMIT
+[0m12:19:50.786956 [debug] [Thread-3 (]: SQL status: OK in 0.035 seconds
+[0m12:19:50.848629 [debug] [Thread-2 (]: Using duckdb connection "seed.wwi_duckdb.PaymentMethod"
+[0m12:19:50.898772 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.wwi_duckdb.StockItem"
+[0m12:19:50.960018 [debug] [Thread-2 (]: On seed.wwi_duckdb.PaymentMethod: COMMIT
+[0m12:19:51.219572 [debug] [Thread-3 (]: On seed.wwi_duckdb.StockItem: COMMIT
+[0m12:19:51.220751 [debug] [Thread-3 (]: Using duckdb connection "seed.wwi_duckdb.StockItem"
+[0m12:19:51.226746 [debug] [Thread-2 (]: SQL status: OK in 0.013 seconds
+[0m12:19:51.231746 [debug] [Thread-3 (]: On seed.wwi_duckdb.StockItem: COMMIT
+[0m12:19:51.278478 [debug] [Thread-2 (]: On seed.wwi_duckdb.PaymentMethod: Close
+[0m12:19:51.363778 [debug] [Thread-3 (]: SQL status: OK in 0.015 seconds
+[0m12:19:51.380830 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002711A3A8950>]}
+[0m12:19:51.425427 [debug] [Thread-3 (]: On seed.wwi_duckdb.StockItem: Close
+[0m12:19:51.484769 [info ] [Thread-2 (]: 5 of 7 OK loaded seed file main.PaymentMethod .................................. [[32mINSERT 6[0m in 1.86s]
+[0m12:19:51.523512 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002711B193F80>]}
+[0m12:19:51.545611 [debug] [Thread-2 (]: Finished running node seed.wwi_duckdb.PaymentMethod
+[0m12:19:51.578712 [info ] [Thread-3 (]: 7 of 7 OK loaded seed file main.StockItem ...................................... [[32mINSERT 672[0m in 1.97s]
+[0m12:19:51.684388 [debug] [Thread-3 (]: Finished running node seed.wwi_duckdb.StockItem
+[0m12:19:53.813436 [debug] [Thread-1 (]: Using duckdb connection "seed.wwi_duckdb.City"
+[0m12:19:53.829476 [debug] [Thread-1 (]: On seed.wwi_duckdb.City: BEGIN
+[0m12:19:53.835979 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:19:53.863526 [debug] [Thread-1 (]: SQL status: OK in 0.027 seconds
+[0m12:19:53.873550 [debug] [Thread-1 (]: Using duckdb connection "seed.wwi_duckdb.City"
+[0m12:19:53.883557 [debug] [Thread-1 (]: On seed.wwi_duckdb.City: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "seed.wwi_duckdb.City"} */
+
+    create table "WWI"."main"."City" ("City Key" integer,"WWI City ID" integer,"City" text,"State Province" text,"Country" text,"Continent" text,"Sales Territory" text,"Region" text,"Subregion" text,"Location" text,"Latest Recorded Population" integer,"Valid From" text,"Valid To" text,"Lineage Key" integer)
+  
+[0m12:19:53.906227 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m12:19:53.907222 [debug] [Thread-1 (]: Using duckdb connection "seed.wwi_duckdb.City"
+[0m12:19:53.919238 [debug] [Thread-1 (]: On seed.wwi_duckdb.City: 
+          COPY "WWI"."main"."City" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\City.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m12:19:54.116749 [debug] [Thread-1 (]: SQL status: OK in 0.187 seconds
+[0m12:19:54.138299 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.wwi_duckdb.City"
+[0m12:19:54.190373 [debug] [Thread-1 (]: On seed.wwi_duckdb.City: COMMIT
+[0m12:19:54.191388 [debug] [Thread-1 (]: Using duckdb connection "seed.wwi_duckdb.City"
+[0m12:19:54.196897 [debug] [Thread-1 (]: On seed.wwi_duckdb.City: COMMIT
+[0m12:19:54.407026 [debug] [Thread-1 (]: SQL status: OK in 0.210 seconds
+[0m12:19:54.413528 [debug] [Thread-1 (]: On seed.wwi_duckdb.City: Close
+[0m12:19:54.448490 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027110444560>]}
+[0m12:19:54.475554 [info ] [Thread-1 (]: 1 of 7 OK loaded seed file main.City ........................................... [[32mINSERT 116295[0m in 7.00s]
+[0m12:19:54.487069 [debug] [Thread-1 (]: Finished running node seed.wwi_duckdb.City
+[0m12:20:21.875460 [debug] [Thread-4 (]: Using duckdb connection "seed.wwi_duckdb.Sale"
+[0m12:20:21.875460 [debug] [Thread-4 (]: On seed.wwi_duckdb.Sale: BEGIN
+[0m12:20:21.876462 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m12:20:21.877460 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m12:20:21.877460 [debug] [Thread-4 (]: Using duckdb connection "seed.wwi_duckdb.Sale"
+[0m12:20:21.877460 [debug] [Thread-4 (]: On seed.wwi_duckdb.Sale: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "seed.wwi_duckdb.Sale"} */
+
+    create table "WWI"."main"."Sale" ("Sale Key" integer,"City Key" integer,"Customer Key" integer,"Bill To Customer Key" integer,"Stock Item Key" integer,"Invoice Date Key" date,"Delivery Date Key" date,"Salesperson Key" integer,"WWI Invoice ID" integer,"Description" text,"Package" text,"Quantity" integer,"Unit Price" float8,"Tax Rate" integer,"Total Excluding Tax" float8,"Tax Amount" float8,"Profit" float8,"Total Including Tax" float8,"Total Dry Items" integer,"Total Chiller Items" integer,"Lineage Key" integer)
+  
+[0m12:20:21.878460 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m12:20:21.880459 [debug] [Thread-4 (]: Using duckdb connection "seed.wwi_duckdb.Sale"
+[0m12:20:21.880459 [debug] [Thread-4 (]: On seed.wwi_duckdb.Sale: 
+          COPY "WWI"."main"."Sale" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\Sale.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m12:20:22.148613 [debug] [Thread-4 (]: SQL status: OK in 0.268 seconds
+[0m12:20:22.149613 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.wwi_duckdb.Sale"
+[0m12:20:22.152616 [debug] [Thread-4 (]: On seed.wwi_duckdb.Sale: COMMIT
+[0m12:20:22.153126 [debug] [Thread-4 (]: Using duckdb connection "seed.wwi_duckdb.Sale"
+[0m12:20:22.153126 [debug] [Thread-4 (]: On seed.wwi_duckdb.Sale: COMMIT
+[0m12:20:22.159128 [debug] [Thread-4 (]: SQL status: OK in 0.005 seconds
+[0m12:20:22.160134 [debug] [Thread-4 (]: On seed.wwi_duckdb.Sale: Close
+[0m12:20:22.161129 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '81f684dc-4bef-4dc0-b66a-d02f87843dd0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002711B39BB60>]}
+[0m12:20:22.162130 [info ] [Thread-4 (]: 6 of 7 OK loaded seed file main.Sale ........................................... [[32mINSERT 228265[0m in 32.61s]
+[0m12:20:22.163640 [debug] [Thread-4 (]: Finished running node seed.wwi_duckdb.Sale
+[0m12:20:22.165652 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:20:22.165652 [debug] [MainThread]: On master: BEGIN
+[0m12:20:22.166657 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:20:22.167654 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:20:22.167654 [debug] [MainThread]: On master: COMMIT
+[0m12:20:22.167654 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:20:22.168652 [debug] [MainThread]: On master: COMMIT
+[0m12:20:22.168652 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:20:22.169655 [debug] [MainThread]: On master: Close
+[0m12:20:22.169655 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:20:22.170920 [debug] [MainThread]: Connection 'create_WWI_main' was properly closed.
+[0m12:20:22.170920 [debug] [MainThread]: Connection 'list_WWI_main' was properly closed.
+[0m12:20:22.170920 [debug] [MainThread]: Connection 'seed.wwi_duckdb.City' was properly closed.
+[0m12:20:22.171919 [debug] [MainThread]: Connection 'seed.wwi_duckdb.PaymentMethod' was properly closed.
+[0m12:20:22.171919 [debug] [MainThread]: Connection 'seed.wwi_duckdb.StockItem' was properly closed.
+[0m12:20:22.171919 [debug] [MainThread]: Connection 'seed.wwi_duckdb.Sale' was properly closed.
+[0m12:20:22.171919 [info ] [MainThread]: 
+[0m12:20:22.173443 [info ] [MainThread]: Finished running 7 seeds in 0 hours 0 minutes and 34.89 seconds (34.89s).
+[0m12:20:22.176458 [debug] [MainThread]: Command end result
+[0m12:20:22.216560 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\manifest.json
+[0m12:20:22.219565 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\semantic_manifest.json
+[0m12:20:22.227686 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\run_results.json
+[0m12:20:22.228687 [info ] [MainThread]: 
+[0m12:20:22.228687 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:20:22.229687 [info ] [MainThread]: 
+[0m12:20:22.229687 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m12:20:22.230686 [debug] [MainThread]: Command `dbt seed` succeeded at 12:20:22.230686 after 37.37 seconds
+[0m12:20:22.231714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002711B3B7E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002711B3B74A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002711B3B6B70>]}
+[0m12:20:22.231714 [debug] [MainThread]: Flushing usage events
+[0m12:20:22.823593 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:28:53.734684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DA827D100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DA8A91430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DA5A6C470>]}
+
+
+============================== 12:28:53.744700 | e8bb53ab-e12a-41e0-9256-7674dc366ddf ==============================
+[0m12:28:53.744700 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:28:53.746699 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\storl\\Desktop\\WWI\\wwi_duckdb\\logs'}
+[0m12:28:54.227769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e8bb53ab-e12a-41e0-9256-7674dc366ddf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DAA3278F0>]}
+[0m12:28:54.372400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e8bb53ab-e12a-41e0-9256-7674dc366ddf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DA8AEAB40>]}
+[0m12:28:54.377972 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:28:54.672272 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m12:28:54.859143 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:28:54.860136 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:28:54.860136 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:28:54.869645 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.wwi_duckdb.staging
+- models.wwi_duckdb.production
+[0m12:28:54.944737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e8bb53ab-e12a-41e0-9256-7674dc366ddf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DA8367110>]}
+[0m12:28:55.059736 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\manifest.json
+[0m12:28:55.063744 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\semantic_manifest.json
+[0m12:28:55.091438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e8bb53ab-e12a-41e0-9256-7674dc366ddf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DAA6522D0>]}
+[0m12:28:55.092332 [info ] [MainThread]: Found 2 models, 7 seeds, 4 data tests, 475 macros
+[0m12:28:55.093872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8bb53ab-e12a-41e0-9256-7674dc366ddf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DAA463E00>]}
+[0m12:28:55.096883 [info ] [MainThread]: 
+[0m12:28:55.097879 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:28:55.098877 [info ] [MainThread]: 
+[0m12:28:55.099893 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:28:55.110039 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_WWI'
+[0m12:28:55.190202 [debug] [ThreadPool]: Using duckdb connection "list_WWI"
+[0m12:28:55.191206 [debug] [ThreadPool]: On list_WWI: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "list_WWI"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"wwi"'
+    
+  
+  
+[0m12:28:55.191206 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:28:55.226638 [debug] [ThreadPool]: SQL status: OK in 0.035 seconds
+[0m12:28:55.228145 [debug] [ThreadPool]: On list_WWI: Close
+[0m12:28:55.229152 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_WWI, now create_WWI_main)
+[0m12:28:55.229152 [debug] [ThreadPool]: Creating schema "database: "WWI"
+schema: "main"
+"
+[0m12:28:55.236180 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:28:55.237188 [debug] [ThreadPool]: On create_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "create_WWI_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='wwi'
+        and type='sqlite'
+    
+  
+[0m12:28:55.238189 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:28:55.239188 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:28:55.240189 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:28:55.240189 [debug] [ThreadPool]: On create_WWI_main: BEGIN
+[0m12:28:55.241190 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:28:55.241190 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:28:55.242194 [debug] [ThreadPool]: On create_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "create_WWI_main"} */
+
+    
+    
+        create schema if not exists "WWI"."main"
+    
+[0m12:28:55.242194 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:28:55.243700 [debug] [ThreadPool]: On create_WWI_main: COMMIT
+[0m12:28:55.243700 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:28:55.244707 [debug] [ThreadPool]: On create_WWI_main: COMMIT
+[0m12:28:55.244707 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:28:55.244707 [debug] [ThreadPool]: On create_WWI_main: Close
+[0m12:28:55.248706 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_WWI_main'
+[0m12:28:55.256022 [debug] [ThreadPool]: Using duckdb connection "list_WWI_main"
+[0m12:28:55.257023 [debug] [ThreadPool]: On list_WWI_main: BEGIN
+[0m12:28:55.257023 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:28:55.258024 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:28:55.258024 [debug] [ThreadPool]: Using duckdb connection "list_WWI_main"
+[0m12:28:55.258024 [debug] [ThreadPool]: On list_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "list_WWI_main"} */
+select
+      'WWI' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'wwi'
+  
+[0m12:28:55.262016 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m12:28:55.263521 [debug] [ThreadPool]: On list_WWI_main: ROLLBACK
+[0m12:28:55.265538 [debug] [ThreadPool]: Failed to rollback 'list_WWI_main'
+[0m12:28:55.265538 [debug] [ThreadPool]: On list_WWI_main: Close
+[0m12:28:55.266529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8bb53ab-e12a-41e0-9256-7674dc366ddf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DAA8482F0>]}
+[0m12:28:55.266529 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:28:55.267526 [debug] [MainThread]: On master: BEGIN
+[0m12:28:55.267526 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:28:55.267526 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:28:55.268526 [debug] [MainThread]: On master: COMMIT
+[0m12:28:55.268526 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:28:55.268526 [debug] [MainThread]: On master: COMMIT
+[0m12:28:55.269525 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:28:55.269525 [debug] [MainThread]: On master: Close
+[0m12:28:55.280603 [debug] [Thread-1 (]: Began running node model.wwi_duckdb.my_first_dbt_model
+[0m12:28:55.282604 [info ] [Thread-1 (]: 1 of 2 START sql table model main.my_first_dbt_model ........................... [RUN]
+[0m12:28:55.283606 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.wwi_duckdb.my_first_dbt_model'
+[0m12:28:55.284608 [debug] [Thread-1 (]: Began compiling node model.wwi_duckdb.my_first_dbt_model
+[0m12:28:55.293642 [debug] [Thread-1 (]: Writing injected SQL for node "model.wwi_duckdb.my_first_dbt_model"
+[0m12:28:55.297657 [debug] [Thread-1 (]: Began executing node model.wwi_duckdb.my_first_dbt_model
+[0m12:28:55.334815 [debug] [Thread-1 (]: Writing runtime sql for node "model.wwi_duckdb.my_first_dbt_model"
+[0m12:28:55.340324 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.my_first_dbt_model"
+[0m12:28:55.341323 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: BEGIN
+[0m12:28:55.342336 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:28:55.342336 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:28:55.343843 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.my_first_dbt_model"
+[0m12:28:55.343843 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_first_dbt_model"} */
+
+  
+    
+    
+
+    create  table
+      "WWI"."main"."my_first_dbt_model__dbt_tmp"
+  
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+  
+[0m12:28:55.345866 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:28:55.352848 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.my_first_dbt_model"
+[0m12:28:55.353898 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_first_dbt_model"} */
+alter table "WWI"."main"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m12:28:55.354898 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:28:55.370438 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: COMMIT
+[0m12:28:55.371420 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.my_first_dbt_model"
+[0m12:28:55.371420 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: COMMIT
+[0m12:28:55.373930 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m12:28:55.382935 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.my_first_dbt_model"
+[0m12:28:55.383950 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_first_dbt_model"} */
+
+      drop table if exists "WWI"."main"."my_first_dbt_model__dbt_backup" cascade
+    
+[0m12:28:55.384940 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:28:55.389147 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: Close
+[0m12:28:55.392154 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8bb53ab-e12a-41e0-9256-7674dc366ddf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DA5C37E60>]}
+[0m12:28:55.393664 [info ] [Thread-1 (]: 1 of 2 OK created sql table model main.my_first_dbt_model ...................... [[32mOK[0m in 0.11s]
+[0m12:28:55.394676 [debug] [Thread-1 (]: Finished running node model.wwi_duckdb.my_first_dbt_model
+[0m12:28:55.396674 [debug] [Thread-3 (]: Began running node model.wwi_duckdb.my_second_dbt_model
+[0m12:28:55.397673 [info ] [Thread-3 (]: 2 of 2 START sql table model main.my_second_dbt_model .......................... [RUN]
+[0m12:28:55.399674 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.wwi_duckdb.my_second_dbt_model'
+[0m12:28:55.399674 [debug] [Thread-3 (]: Began compiling node model.wwi_duckdb.my_second_dbt_model
+[0m12:28:55.403830 [debug] [Thread-3 (]: Writing injected SQL for node "model.wwi_duckdb.my_second_dbt_model"
+[0m12:28:55.405830 [debug] [Thread-3 (]: Began executing node model.wwi_duckdb.my_second_dbt_model
+[0m12:28:55.412828 [debug] [Thread-3 (]: Writing runtime sql for node "model.wwi_duckdb.my_second_dbt_model"
+[0m12:28:55.415826 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.my_second_dbt_model"
+[0m12:28:55.415826 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: BEGIN
+[0m12:28:55.416826 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:28:55.417826 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m12:28:55.417826 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.my_second_dbt_model"
+[0m12:28:55.417826 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_second_dbt_model"} */
+
+  
+    
+    
+
+    create  table
+      "WWI"."main"."my_second_dbt_model__dbt_tmp"
+  
+    as (
+      -- Use the `ref` function to select from other models
+
+select *
+from "WWI"."main"."my_first_dbt_model"
+where id = 1
+    );
+  
+  
+[0m12:28:55.420335 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m12:28:55.425859 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.my_second_dbt_model"
+[0m12:28:55.425859 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_second_dbt_model"} */
+alter table "WWI"."main"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m12:28:55.426860 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m12:28:55.429369 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: COMMIT
+[0m12:28:55.429369 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.my_second_dbt_model"
+[0m12:28:55.430369 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: COMMIT
+[0m12:28:55.432369 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m12:28:55.437224 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.my_second_dbt_model"
+[0m12:28:55.440214 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_second_dbt_model"} */
+
+      drop table if exists "WWI"."main"."my_second_dbt_model__dbt_backup" cascade
+    
+[0m12:28:55.441208 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m12:28:55.442205 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: Close
+[0m12:28:55.443712 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8bb53ab-e12a-41e0-9256-7674dc366ddf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DAACE80E0>]}
+[0m12:28:55.443712 [info ] [Thread-3 (]: 2 of 2 OK created sql table model main.my_second_dbt_model ..................... [[32mOK[0m in 0.04s]
+[0m12:28:55.444718 [debug] [Thread-3 (]: Finished running node model.wwi_duckdb.my_second_dbt_model
+[0m12:28:55.446716 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:28:55.446716 [debug] [MainThread]: On master: BEGIN
+[0m12:28:55.447717 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:28:55.447717 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:28:55.448748 [debug] [MainThread]: On master: COMMIT
+[0m12:28:55.448748 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:28:55.448748 [debug] [MainThread]: On master: COMMIT
+[0m12:28:55.449717 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:28:55.449717 [debug] [MainThread]: On master: Close
+[0m12:28:55.450717 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:28:55.450717 [debug] [MainThread]: Connection 'create_WWI_main' was properly closed.
+[0m12:28:55.451717 [debug] [MainThread]: Connection 'list_WWI_main' was properly closed.
+[0m12:28:55.451717 [debug] [MainThread]: Connection 'model.wwi_duckdb.my_first_dbt_model' was properly closed.
+[0m12:28:55.451717 [debug] [MainThread]: Connection 'model.wwi_duckdb.my_second_dbt_model' was properly closed.
+[0m12:28:55.452718 [info ] [MainThread]: 
+[0m12:28:55.453824 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 0.35 seconds (0.35s).
+[0m12:28:55.454832 [debug] [MainThread]: Command end result
+[0m12:28:55.482871 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\manifest.json
+[0m12:28:55.485871 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\semantic_manifest.json
+[0m12:28:55.496889 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\run_results.json
+[0m12:28:55.497885 [info ] [MainThread]: 
+[0m12:28:55.498884 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:28:55.499882 [info ] [MainThread]: 
+[0m12:28:55.500903 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m12:28:55.502883 [debug] [MainThread]: Command `dbt run` succeeded at 12:28:55.502883 after 2.02 seconds
+[0m12:28:55.502883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DA5E5D040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DA5DD9760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DA8D501A0>]}
+[0m12:28:55.503936 [debug] [MainThread]: Flushing usage events
+[0m12:29:00.709370 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:29:58.962780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652D577410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652D894CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652D577470>]}
+
+
+============================== 12:29:58.969305 | 14a27710-3a02-45d1-b345-e6f78d3037da ==============================
+[0m12:29:58.969305 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:29:58.971315 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\storl\\Desktop\\WWI\\wwi_duckdb\\logs'}
+[0m12:29:59.248516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '14a27710-3a02-45d1-b345-e6f78d3037da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652EBE2FC0>]}
+[0m12:29:59.315700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '14a27710-3a02-45d1-b345-e6f78d3037da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652EC36DB0>]}
+[0m12:29:59.317683 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:29:59.510077 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m12:29:59.667489 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:29:59.668488 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:29:59.668488 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:29:59.677516 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.wwi_duckdb.production
+- models.wwi_duckdb.staging
+[0m12:29:59.746789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '14a27710-3a02-45d1-b345-e6f78d3037da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652F210170>]}
+[0m12:29:59.844906 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\manifest.json
+[0m12:29:59.847908 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\semantic_manifest.json
+[0m12:29:59.871228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '14a27710-3a02-45d1-b345-e6f78d3037da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652F459370>]}
+[0m12:29:59.872229 [info ] [MainThread]: Found 2 models, 7 seeds, 4 data tests, 475 macros
+[0m12:29:59.872229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '14a27710-3a02-45d1-b345-e6f78d3037da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652F004890>]}
+[0m12:29:59.874743 [info ] [MainThread]: 
+[0m12:29:59.875743 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:29:59.875743 [info ] [MainThread]: 
+[0m12:29:59.876747 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:29:59.884751 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_WWI'
+[0m12:29:59.956041 [debug] [ThreadPool]: Using duckdb connection "list_WWI"
+[0m12:29:59.957042 [debug] [ThreadPool]: On list_WWI: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "list_WWI"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"wwi"'
+    
+  
+  
+[0m12:29:59.957042 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:29:59.988111 [debug] [ThreadPool]: SQL status: OK in 0.031 seconds
+[0m12:29:59.990113 [debug] [ThreadPool]: On list_WWI: Close
+[0m12:29:59.991115 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_WWI, now create_WWI_main)
+[0m12:29:59.991115 [debug] [ThreadPool]: Creating schema "database: "WWI"
+schema: "main"
+"
+[0m12:29:59.998650 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:29:59.999674 [debug] [ThreadPool]: On create_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "create_WWI_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='wwi'
+        and type='sqlite'
+    
+  
+[0m12:29:59.999674 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:30:00.000650 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:30:00.001652 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:30:00.002652 [debug] [ThreadPool]: On create_WWI_main: BEGIN
+[0m12:30:00.003698 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:30:00.004703 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:30:00.004703 [debug] [ThreadPool]: On create_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "create_WWI_main"} */
+
+    
+    
+        create schema if not exists "WWI"."main"
+    
+[0m12:30:00.005701 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:30:00.005701 [debug] [ThreadPool]: On create_WWI_main: COMMIT
+[0m12:30:00.006705 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:30:00.006705 [debug] [ThreadPool]: On create_WWI_main: COMMIT
+[0m12:30:00.007702 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:30:00.007702 [debug] [ThreadPool]: On create_WWI_main: Close
+[0m12:30:00.009700 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_WWI_main'
+[0m12:30:00.015702 [debug] [ThreadPool]: Using duckdb connection "list_WWI_main"
+[0m12:30:00.016704 [debug] [ThreadPool]: On list_WWI_main: BEGIN
+[0m12:30:00.016704 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:30:00.017704 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:30:00.017704 [debug] [ThreadPool]: Using duckdb connection "list_WWI_main"
+[0m12:30:00.017704 [debug] [ThreadPool]: On list_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "list_WWI_main"} */
+select
+      'WWI' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'wwi'
+  
+[0m12:30:00.022231 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m12:30:00.023741 [debug] [ThreadPool]: On list_WWI_main: ROLLBACK
+[0m12:30:00.025757 [debug] [ThreadPool]: Failed to rollback 'list_WWI_main'
+[0m12:30:00.026752 [debug] [ThreadPool]: On list_WWI_main: Close
+[0m12:30:00.029769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '14a27710-3a02-45d1-b345-e6f78d3037da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652EEE43B0>]}
+[0m12:30:00.030759 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:30:00.030759 [debug] [MainThread]: On master: BEGIN
+[0m12:30:00.030759 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:30:00.031837 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:30:00.031837 [debug] [MainThread]: On master: COMMIT
+[0m12:30:00.032750 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:30:00.032750 [debug] [MainThread]: On master: COMMIT
+[0m12:30:00.033758 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:30:00.033758 [debug] [MainThread]: On master: Close
+[0m12:30:00.038278 [debug] [Thread-1 (]: Began running node model.wwi_duckdb.my_first_dbt_model
+[0m12:30:00.038278 [info ] [Thread-1 (]: 1 of 2 START sql table model main.my_first_dbt_model ........................... [RUN]
+[0m12:30:00.039276 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.wwi_duckdb.my_first_dbt_model'
+[0m12:30:00.040279 [debug] [Thread-1 (]: Began compiling node model.wwi_duckdb.my_first_dbt_model
+[0m12:30:00.046838 [debug] [Thread-1 (]: Writing injected SQL for node "model.wwi_duckdb.my_first_dbt_model"
+[0m12:30:00.048846 [debug] [Thread-1 (]: Began executing node model.wwi_duckdb.my_first_dbt_model
+[0m12:30:00.083490 [debug] [Thread-1 (]: Writing runtime sql for node "model.wwi_duckdb.my_first_dbt_model"
+[0m12:30:00.085892 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.my_first_dbt_model"
+[0m12:30:00.086399 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: BEGIN
+[0m12:30:00.086399 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:30:00.087409 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:30:00.088406 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.my_first_dbt_model"
+[0m12:30:00.088406 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_first_dbt_model"} */
+
+  
+    
+    
+
+    create  table
+      "WWI"."main"."my_first_dbt_model__dbt_tmp"
+  
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+  
+[0m12:30:00.089406 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:30:00.095920 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.my_first_dbt_model"
+[0m12:30:00.096923 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_first_dbt_model"} */
+alter table "WWI"."main"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m12:30:00.096923 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:30:00.113502 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: COMMIT
+[0m12:30:00.113502 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.my_first_dbt_model"
+[0m12:30:00.114508 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: COMMIT
+[0m12:30:00.116509 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m12:30:00.124557 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.my_first_dbt_model"
+[0m12:30:00.125556 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_first_dbt_model"} */
+
+      drop table if exists "WWI"."main"."my_first_dbt_model__dbt_backup" cascade
+    
+[0m12:30:00.126557 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:30:00.130553 [debug] [Thread-1 (]: On model.wwi_duckdb.my_first_dbt_model: Close
+[0m12:30:00.132804 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '14a27710-3a02-45d1-b345-e6f78d3037da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652A80FE90>]}
+[0m12:30:00.133815 [info ] [Thread-1 (]: 1 of 2 OK created sql table model main.my_first_dbt_model ...................... [[32mOK[0m in 0.09s]
+[0m12:30:00.134813 [debug] [Thread-1 (]: Finished running node model.wwi_duckdb.my_first_dbt_model
+[0m12:30:00.134813 [debug] [Thread-3 (]: Began running node model.wwi_duckdb.my_second_dbt_model
+[0m12:30:00.136365 [info ] [Thread-3 (]: 2 of 2 START sql table model main.my_second_dbt_model .......................... [RUN]
+[0m12:30:00.137378 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.wwi_duckdb.my_second_dbt_model'
+[0m12:30:00.138378 [debug] [Thread-3 (]: Began compiling node model.wwi_duckdb.my_second_dbt_model
+[0m12:30:00.141377 [debug] [Thread-3 (]: Writing injected SQL for node "model.wwi_duckdb.my_second_dbt_model"
+[0m12:30:00.142378 [debug] [Thread-3 (]: Began executing node model.wwi_duckdb.my_second_dbt_model
+[0m12:30:00.145905 [debug] [Thread-3 (]: Writing runtime sql for node "model.wwi_duckdb.my_second_dbt_model"
+[0m12:30:00.146911 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.my_second_dbt_model"
+[0m12:30:00.147910 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: BEGIN
+[0m12:30:00.147910 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:30:00.148909 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m12:30:00.148909 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.my_second_dbt_model"
+[0m12:30:00.149911 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_second_dbt_model"} */
+
+  
+    
+    
+
+    create  table
+      "WWI"."main"."my_second_dbt_model__dbt_tmp"
+  
+    as (
+      -- Use the `ref` function to select from other models
+
+select *
+from "WWI"."main"."my_first_dbt_model"
+where id = 1
+    );
+  
+  
+[0m12:30:00.151909 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m12:30:00.155048 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.my_second_dbt_model"
+[0m12:30:00.155048 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_second_dbt_model"} */
+alter table "WWI"."main"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m12:30:00.156057 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m12:30:00.158055 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: COMMIT
+[0m12:30:00.159053 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.my_second_dbt_model"
+[0m12:30:00.160048 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: COMMIT
+[0m12:30:00.161561 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m12:30:00.164588 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.my_second_dbt_model"
+[0m12:30:00.166621 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.my_second_dbt_model"} */
+
+      drop table if exists "WWI"."main"."my_second_dbt_model__dbt_backup" cascade
+    
+[0m12:30:00.167567 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m12:30:00.168590 [debug] [Thread-3 (]: On model.wwi_duckdb.my_second_dbt_model: Close
+[0m12:30:00.169566 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '14a27710-3a02-45d1-b345-e6f78d3037da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652F8A4320>]}
+[0m12:30:00.170614 [info ] [Thread-3 (]: 2 of 2 OK created sql table model main.my_second_dbt_model ..................... [[32mOK[0m in 0.03s]
+[0m12:30:00.171617 [debug] [Thread-3 (]: Finished running node model.wwi_duckdb.my_second_dbt_model
+[0m12:30:00.173615 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:30:00.174621 [debug] [MainThread]: On master: BEGIN
+[0m12:30:00.174621 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:30:00.175615 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:30:00.176616 [debug] [MainThread]: On master: COMMIT
+[0m12:30:00.176616 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:30:00.176616 [debug] [MainThread]: On master: COMMIT
+[0m12:30:00.177615 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:30:00.177615 [debug] [MainThread]: On master: Close
+[0m12:30:00.178617 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:30:00.178617 [debug] [MainThread]: Connection 'create_WWI_main' was properly closed.
+[0m12:30:00.178617 [debug] [MainThread]: Connection 'list_WWI_main' was properly closed.
+[0m12:30:00.179616 [debug] [MainThread]: Connection 'model.wwi_duckdb.my_first_dbt_model' was properly closed.
+[0m12:30:00.179616 [debug] [MainThread]: Connection 'model.wwi_duckdb.my_second_dbt_model' was properly closed.
+[0m12:30:00.179616 [info ] [MainThread]: 
+[0m12:30:00.180619 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 0.30 seconds (0.30s).
+[0m12:30:00.181619 [debug] [MainThread]: Command end result
+[0m12:30:00.205678 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\manifest.json
+[0m12:30:00.208679 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\semantic_manifest.json
+[0m12:30:00.217676 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\run_results.json
+[0m12:30:00.217676 [info ] [MainThread]: 
+[0m12:30:00.218679 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:30:00.219685 [info ] [MainThread]: 
+[0m12:30:00.220752 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m12:30:00.221751 [debug] [MainThread]: Command `dbt run` succeeded at 12:30:00.221751 after 1.52 seconds
+[0m12:30:00.222752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652D8F5CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652E9EBD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002652D73B5C0>]}
+[0m12:30:00.223753 [debug] [MainThread]: Flushing usage events
+[0m12:30:04.992145 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:34:42.028003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C222FB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C509E4B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C509F2F0>]}
+
+
+============================== 12:34:42.033002 | 169b6bae-76d6-4c17-b999-927c539860b9 ==============================
+[0m12:34:42.033002 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:34:42.033002 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\storl\\Desktop\\WWI\\wwi_duckdb\\logs'}
+[0m12:34:42.312090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C4A53320>]}
+[0m12:34:42.384854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C49E9880>]}
+[0m12:34:42.388377 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:34:42.599897 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m12:34:42.766914 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 8 files added, 0 files changed.
+[0m12:34:42.766914 [debug] [MainThread]: Partial parsing: added file: wwi_duckdb://wwi_duckdb/models\staging\stg_date.sql
+[0m12:34:42.767915 [debug] [MainThread]: Partial parsing: added file: wwi_duckdb://wwi_duckdb/models\staging\schema.yml
+[0m12:34:42.767915 [debug] [MainThread]: Partial parsing: added file: wwi_duckdb://wwi_duckdb/models\staging\stg_city.sql
+[0m12:34:42.767915 [debug] [MainThread]: Partial parsing: added file: wwi_duckdb://wwi_duckdb/models\staging\stg_paymentmethod.sql
+[0m12:34:42.767915 [debug] [MainThread]: Partial parsing: added file: wwi_duckdb://wwi_duckdb/models\staging\stg_customer.sql
+[0m12:34:42.769418 [debug] [MainThread]: Partial parsing: added file: wwi_duckdb://wwi_duckdb/models\staging\stg_employee.sql
+[0m12:34:42.769418 [debug] [MainThread]: Partial parsing: added file: wwi_duckdb://wwi_duckdb/models\staging\stg_stockitem.sql
+[0m12:34:42.770422 [debug] [MainThread]: Partial parsing: added file: wwi_duckdb://wwi_duckdb/models\staging\stg_sale.sql
+[0m12:34:42.770422 [debug] [MainThread]: Partial parsing: deleted file: wwi_duckdb://wwi_duckdb/models\example\my_second_dbt_model.sql
+[0m12:34:42.771426 [debug] [MainThread]: Partial parsing: deleted file: wwi_duckdb://wwi_duckdb/models\example\my_first_dbt_model.sql
+[0m12:34:43.288184 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.wwi_duckdb.production
+[0m12:34:43.294701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C6BC75F0>]}
+[0m12:34:43.459999 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\manifest.json
+[0m12:34:43.461998 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\semantic_manifest.json
+[0m12:34:43.490237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C72C7950>]}
+[0m12:34:43.490237 [info ] [MainThread]: Found 7 seeds, 7 models, 13 data tests, 475 macros
+[0m12:34:43.491238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C222DC10>]}
+[0m12:34:43.494763 [info ] [MainThread]: 
+[0m12:34:43.494763 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:34:43.495761 [info ] [MainThread]: 
+[0m12:34:43.496757 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:34:43.504824 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_WWI'
+[0m12:34:43.572517 [debug] [ThreadPool]: Using duckdb connection "list_WWI"
+[0m12:34:43.574028 [debug] [ThreadPool]: On list_WWI: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "list_WWI"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"wwi"'
+    
+  
+  
+[0m12:34:43.574028 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:34:43.605703 [debug] [ThreadPool]: SQL status: OK in 0.031 seconds
+[0m12:34:43.607703 [debug] [ThreadPool]: On list_WWI: Close
+[0m12:34:43.608704 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_WWI, now create_WWI_main)
+[0m12:34:43.608704 [debug] [ThreadPool]: Creating schema "database: "WWI"
+schema: "main"
+"
+[0m12:34:43.615704 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:34:43.616730 [debug] [ThreadPool]: On create_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "create_WWI_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='wwi'
+        and type='sqlite'
+    
+  
+[0m12:34:43.616730 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:34:43.617702 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:34:43.619206 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:34:43.619206 [debug] [ThreadPool]: On create_WWI_main: BEGIN
+[0m12:34:43.620212 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:34:43.620212 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:34:43.620212 [debug] [ThreadPool]: On create_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "create_WWI_main"} */
+
+    
+    
+        create schema if not exists "WWI"."main"
+    
+[0m12:34:43.621212 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:34:43.622210 [debug] [ThreadPool]: On create_WWI_main: COMMIT
+[0m12:34:43.622210 [debug] [ThreadPool]: Using duckdb connection "create_WWI_main"
+[0m12:34:43.622210 [debug] [ThreadPool]: On create_WWI_main: COMMIT
+[0m12:34:43.622210 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:34:43.623715 [debug] [ThreadPool]: On create_WWI_main: Close
+[0m12:34:43.625721 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_WWI_main'
+[0m12:34:43.631723 [debug] [ThreadPool]: Using duckdb connection "list_WWI_main"
+[0m12:34:43.631723 [debug] [ThreadPool]: On list_WWI_main: BEGIN
+[0m12:34:43.631723 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:34:43.632722 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:34:43.632722 [debug] [ThreadPool]: Using duckdb connection "list_WWI_main"
+[0m12:34:43.633723 [debug] [ThreadPool]: On list_WWI_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "connection_name": "list_WWI_main"} */
+select
+      'WWI' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'wwi'
+  
+[0m12:34:43.636238 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m12:34:43.638246 [debug] [ThreadPool]: On list_WWI_main: ROLLBACK
+[0m12:34:43.639246 [debug] [ThreadPool]: Failed to rollback 'list_WWI_main'
+[0m12:34:43.640246 [debug] [ThreadPool]: On list_WWI_main: Close
+[0m12:34:43.641752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C727BCE0>]}
+[0m12:34:43.642762 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:34:43.643758 [debug] [MainThread]: On master: BEGIN
+[0m12:34:43.643758 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:34:43.644809 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:34:43.644809 [debug] [MainThread]: On master: COMMIT
+[0m12:34:43.645764 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:34:43.645764 [debug] [MainThread]: On master: COMMIT
+[0m12:34:43.646771 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:34:43.646771 [debug] [MainThread]: On master: Close
+[0m12:34:43.652764 [debug] [Thread-1 (]: Began running node model.wwi_duckdb.stg_city
+[0m12:34:43.652764 [debug] [Thread-2 (]: Began running node model.wwi_duckdb.stg_customer
+[0m12:34:43.653838 [debug] [Thread-3 (]: Began running node model.wwi_duckdb.stg_date
+[0m12:34:43.654841 [debug] [Thread-4 (]: Began running node model.wwi_duckdb.stg_employee
+[0m12:34:43.654841 [info ] [Thread-1 (]: 1 of 7 START sql view model main.stg_city ...................................... [RUN]
+[0m12:34:43.655843 [info ] [Thread-2 (]: 2 of 7 START sql view model main.stg_customer .................................. [RUN]
+[0m12:34:43.656844 [info ] [Thread-3 (]: 3 of 7 START sql view model main.stg_date ...................................... [RUN]
+[0m12:34:43.657844 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.wwi_duckdb.stg_city'
+[0m12:34:43.656844 [info ] [Thread-4 (]: 4 of 7 START sql view model main.stg_employee .................................. [RUN]
+[0m12:34:43.659840 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.wwi_duckdb.stg_customer'
+[0m12:34:43.660836 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.wwi_duckdb.stg_date'
+[0m12:34:43.660836 [debug] [Thread-1 (]: Began compiling node model.wwi_duckdb.stg_city
+[0m12:34:43.661837 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.wwi_duckdb.stg_employee'
+[0m12:34:43.661837 [debug] [Thread-2 (]: Began compiling node model.wwi_duckdb.stg_customer
+[0m12:34:43.662839 [debug] [Thread-3 (]: Began compiling node model.wwi_duckdb.stg_date
+[0m12:34:43.669341 [debug] [Thread-1 (]: Writing injected SQL for node "model.wwi_duckdb.stg_city"
+[0m12:34:43.670349 [debug] [Thread-4 (]: Began compiling node model.wwi_duckdb.stg_employee
+[0m12:34:43.673857 [debug] [Thread-2 (]: Writing injected SQL for node "model.wwi_duckdb.stg_customer"
+[0m12:34:43.676877 [debug] [Thread-3 (]: Writing injected SQL for node "model.wwi_duckdb.stg_date"
+[0m12:34:43.679880 [debug] [Thread-4 (]: Writing injected SQL for node "model.wwi_duckdb.stg_employee"
+[0m12:34:43.681878 [debug] [Thread-1 (]: Began executing node model.wwi_duckdb.stg_city
+[0m12:34:43.687075 [debug] [Thread-4 (]: Began executing node model.wwi_duckdb.stg_employee
+[0m12:34:43.704110 [debug] [Thread-3 (]: Began executing node model.wwi_duckdb.stg_date
+[0m12:34:43.716631 [debug] [Thread-2 (]: Began executing node model.wwi_duckdb.stg_customer
+[0m12:34:43.718628 [debug] [Thread-1 (]: Writing runtime sql for node "model.wwi_duckdb.stg_city"
+[0m12:34:43.723681 [debug] [Thread-4 (]: Writing runtime sql for node "model.wwi_duckdb.stg_employee"
+[0m12:34:43.729696 [debug] [Thread-3 (]: Writing runtime sql for node "model.wwi_duckdb.stg_date"
+[0m12:34:43.734682 [debug] [Thread-2 (]: Writing runtime sql for node "model.wwi_duckdb.stg_customer"
+[0m12:34:43.737205 [debug] [Thread-4 (]: Using duckdb connection "model.wwi_duckdb.stg_employee"
+[0m12:34:43.738206 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_employee: BEGIN
+[0m12:34:43.739212 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.stg_city"
+[0m12:34:43.740208 [debug] [Thread-2 (]: Using duckdb connection "model.wwi_duckdb.stg_customer"
+[0m12:34:43.740208 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.stg_date"
+[0m12:34:43.740208 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m12:34:43.741716 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_city: BEGIN
+[0m12:34:43.742726 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_customer: BEGIN
+[0m12:34:43.742726 [debug] [Thread-3 (]: On model.wwi_duckdb.stg_date: BEGIN
+[0m12:34:43.744733 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:34:43.744733 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m12:34:43.745738 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:34:43.746732 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:34:43.746732 [debug] [Thread-4 (]: Using duckdb connection "model.wwi_duckdb.stg_employee"
+[0m12:34:43.747733 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m12:34:43.748734 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m12:34:43.749735 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_employee: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_employee"} */
+
+  
+  create view "WWI"."main"."stg_employee__dbt_tmp" as (
+    with source as (
+    select * from "WWI"."main"."Employee"
+),
+renamed as (
+    select
+        "Employee Key" AS employee_key,
+        "WWI Employee ID" AS wwi_employee_id,
+        "Employee" AS employee,
+        "Preferred Name" AS preferred_name,
+        "Is Salesperson" AS is_salesperson,
+        "Photo" AS photo,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key
+    from source
+)
+select * from renamed
+  );
+
+[0m12:34:43.749735 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m12:34:43.750733 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.stg_city"
+[0m12:34:43.750733 [debug] [Thread-2 (]: Using duckdb connection "model.wwi_duckdb.stg_customer"
+[0m12:34:43.751758 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.stg_date"
+[0m12:34:43.752732 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_city: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_city"} */
+
+  
+  create view "WWI"."main"."stg_city__dbt_tmp" as (
+    with source as (
+    select * from "WWI"."main"."City"
+),
+
+renamed as (
+    select
+        "City Key" AS city_key,
+        "WWI City ID" AS wwi_city_id,
+        "City" AS city,
+        "State Province" AS state_province,
+        "Country" AS country,
+        "Continent" AS continent,
+        "Sales Territory" AS sales_territory,
+        "Region" AS region,
+        "Subregion" AS subregion,
+        "Location" AS location,
+        "Latest Recorded Population" AS latest_recorded_population,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key
+    from source
+)
+select * from renamed
+  );
+
+[0m12:34:43.753788 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m12:34:43.753788 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_customer: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_customer"} */
+
+  
+  create view "WWI"."main"."stg_customer__dbt_tmp" as (
+    with source as (
+    select * from "WWI"."main"."Customer"
+),
+
+renamed as (
+    select
+        "Customer Key" AS customer_key,
+        "WWI Customer ID" AS wwi_customer_id,
+        "Customer" AS customer,
+        "Bill To Customer" AS bill_to_customer,
+        "Category" AS category,
+        "Buying Group" AS buying_group,
+        "Primary Contact" AS primary_contact,
+        "Postal Code" AS postal_code,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key
+    from source
+
+)
+select * from renamed
+  );
+
+[0m12:34:43.754796 [debug] [Thread-3 (]: On model.wwi_duckdb.stg_date: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_date"} */
+
+  
+  create view "WWI"."main"."stg_date__dbt_tmp" as (
+    with source as (
+    select * from "WWI"."main"."Date"
+),
+renamed as (
+    select
+        "Date" AS date,
+        "Day Number" AS day_number,
+        "Day" AS day,
+        "Month" AS month,
+        "Short Month" AS short_month,
+        "Calendar Month Number" AS calendar_month_number,
+        "Calendar Month Label" AS calendar_month_label,
+        "Calendar Year" AS calendar_year,
+        "Calendar Year Label" AS calendar_year_label,
+        "Fiscal Month Number" AS fiscal_month_number,
+        "Fiscal Month Label" AS fiscal_month_label,
+        "Fiscal Year" AS fiscal_year,
+        "Fiscal Year Label" AS fiscal_year_label,
+        "ISO Week Number" AS iso_week_number
+    from source
+)
+select * from renamed
+  );
+
+[0m12:34:43.767798 [debug] [Thread-4 (]: Using duckdb connection "model.wwi_duckdb.stg_employee"
+[0m12:34:43.767798 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m12:34:43.770320 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_employee: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_employee"} */
+alter view "WWI"."main"."stg_employee__dbt_tmp" rename to "stg_employee"
+[0m12:34:43.773827 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.stg_city"
+[0m12:34:43.773827 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m12:34:43.774843 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m12:34:43.775841 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_city: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_city"} */
+alter view "WWI"."main"."stg_city__dbt_tmp" rename to "stg_city"
+[0m12:34:43.776839 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m12:34:43.779843 [debug] [Thread-2 (]: Using duckdb connection "model.wwi_duckdb.stg_customer"
+[0m12:34:43.782852 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.stg_date"
+[0m12:34:43.794906 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m12:34:43.798912 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_employee: COMMIT
+[0m12:34:43.798912 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_customer: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_customer"} */
+alter view "WWI"."main"."stg_customer__dbt_tmp" rename to "stg_customer"
+[0m12:34:43.799918 [debug] [Thread-3 (]: On model.wwi_duckdb.stg_date: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_date"} */
+alter view "WWI"."main"."stg_date__dbt_tmp" rename to "stg_date"
+[0m12:34:43.801908 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_city: COMMIT
+[0m12:34:43.801908 [debug] [Thread-4 (]: Using duckdb connection "model.wwi_duckdb.stg_employee"
+[0m12:34:43.802908 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.stg_city"
+[0m12:34:43.803989 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m12:34:43.803989 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m12:34:43.804987 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_employee: COMMIT
+[0m12:34:43.804987 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_city: COMMIT
+[0m12:34:43.806994 [debug] [Thread-3 (]: On model.wwi_duckdb.stg_date: COMMIT
+[0m12:34:43.808985 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_customer: COMMIT
+[0m12:34:43.809986 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.stg_date"
+[0m12:34:43.809986 [debug] [Thread-2 (]: Using duckdb connection "model.wwi_duckdb.stg_customer"
+[0m12:34:43.810995 [debug] [Thread-3 (]: On model.wwi_duckdb.stg_date: COMMIT
+[0m12:34:43.811989 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m12:34:43.811989 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_customer: COMMIT
+[0m12:34:43.812989 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m12:34:43.819491 [debug] [Thread-4 (]: Using duckdb connection "model.wwi_duckdb.stg_employee"
+[0m12:34:43.822501 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.stg_city"
+[0m12:34:43.822501 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m12:34:43.824020 [debug] [Thread-3 (]: SQL status: OK in 0.010 seconds
+[0m12:34:43.824020 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_employee: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_employee"} */
+
+      drop view if exists "WWI"."main"."stg_employee__dbt_backup" cascade
+    
+[0m12:34:43.825041 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_city: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_city"} */
+
+      drop view if exists "WWI"."main"."stg_city__dbt_backup" cascade
+    
+[0m12:34:43.829036 [debug] [Thread-2 (]: Using duckdb connection "model.wwi_duckdb.stg_customer"
+[0m12:34:43.832036 [debug] [Thread-3 (]: Using duckdb connection "model.wwi_duckdb.stg_date"
+[0m12:34:43.833545 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m12:34:43.834557 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_customer: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_customer"} */
+
+      drop view if exists "WWI"."main"."stg_customer__dbt_backup" cascade
+    
+[0m12:34:43.834557 [debug] [Thread-3 (]: On model.wwi_duckdb.stg_date: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_date"} */
+
+      drop view if exists "WWI"."main"."stg_date__dbt_backup" cascade
+    
+[0m12:34:43.836068 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m12:34:43.840076 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_employee: Close
+[0m12:34:43.840076 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m12:34:43.842597 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_city: Close
+[0m12:34:43.843597 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m12:34:43.847595 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_customer: Close
+[0m12:34:43.847595 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C6C2E840>]}
+[0m12:34:43.848597 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C6F39400>]}
+[0m12:34:43.850597 [debug] [Thread-3 (]: On model.wwi_duckdb.stg_date: Close
+[0m12:34:43.851600 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C75FBFB0>]}
+[0m12:34:43.852596 [info ] [Thread-4 (]: 4 of 7 OK created sql view model main.stg_employee ............................. [[32mOK[0m in 0.18s]
+[0m12:34:43.853686 [info ] [Thread-1 (]: 1 of 7 OK created sql view model main.stg_city ................................. [[32mOK[0m in 0.19s]
+[0m12:34:43.854694 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C7645F70>]}
+[0m12:34:43.856694 [debug] [Thread-4 (]: Finished running node model.wwi_duckdb.stg_employee
+[0m12:34:43.855692 [info ] [Thread-2 (]: 2 of 7 OK created sql view model main.stg_customer ............................. [[32mOK[0m in 0.19s]
+[0m12:34:43.857692 [debug] [Thread-1 (]: Finished running node model.wwi_duckdb.stg_city
+[0m12:34:43.858698 [debug] [Thread-4 (]: Began running node model.wwi_duckdb.stg_paymentmethod
+[0m12:34:43.857692 [info ] [Thread-3 (]: 3 of 7 OK created sql view model main.stg_date ................................. [[32mOK[0m in 0.19s]
+[0m12:34:43.859694 [debug] [Thread-2 (]: Finished running node model.wwi_duckdb.stg_customer
+[0m12:34:43.859694 [debug] [Thread-1 (]: Began running node model.wwi_duckdb.stg_sale
+[0m12:34:43.860695 [info ] [Thread-4 (]: 5 of 7 START sql view model main.stg_paymentmethod ............................. [RUN]
+[0m12:34:43.861693 [debug] [Thread-3 (]: Finished running node model.wwi_duckdb.stg_date
+[0m12:34:43.862694 [debug] [Thread-2 (]: Began running node model.wwi_duckdb.stg_stockitem
+[0m12:34:43.862694 [info ] [Thread-1 (]: 6 of 7 START sql view model main.stg_sale ...................................... [RUN]
+[0m12:34:43.863692 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.wwi_duckdb.stg_employee, now model.wwi_duckdb.stg_paymentmethod)
+[0m12:34:43.864692 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.wwi_duckdb.stg_city, now model.wwi_duckdb.stg_sale)
+[0m12:34:43.864692 [info ] [Thread-2 (]: 7 of 7 START sql view model main.stg_stockitem ................................. [RUN]
+[0m12:34:43.865691 [debug] [Thread-4 (]: Began compiling node model.wwi_duckdb.stg_paymentmethod
+[0m12:34:43.865691 [debug] [Thread-1 (]: Began compiling node model.wwi_duckdb.stg_sale
+[0m12:34:43.866690 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.wwi_duckdb.stg_customer, now model.wwi_duckdb.stg_stockitem)
+[0m12:34:43.869692 [debug] [Thread-4 (]: Writing injected SQL for node "model.wwi_duckdb.stg_paymentmethod"
+[0m12:34:43.872779 [debug] [Thread-1 (]: Writing injected SQL for node "model.wwi_duckdb.stg_sale"
+[0m12:34:43.873776 [debug] [Thread-2 (]: Began compiling node model.wwi_duckdb.stg_stockitem
+[0m12:34:43.879773 [debug] [Thread-2 (]: Writing injected SQL for node "model.wwi_duckdb.stg_stockitem"
+[0m12:34:43.880779 [debug] [Thread-1 (]: Began executing node model.wwi_duckdb.stg_sale
+[0m12:34:43.887293 [debug] [Thread-1 (]: Writing runtime sql for node "model.wwi_duckdb.stg_sale"
+[0m12:34:43.888296 [debug] [Thread-4 (]: Began executing node model.wwi_duckdb.stg_paymentmethod
+[0m12:34:43.889298 [debug] [Thread-2 (]: Began executing node model.wwi_duckdb.stg_stockitem
+[0m12:34:43.894824 [debug] [Thread-4 (]: Writing runtime sql for node "model.wwi_duckdb.stg_paymentmethod"
+[0m12:34:43.898826 [debug] [Thread-2 (]: Writing runtime sql for node "model.wwi_duckdb.stg_stockitem"
+[0m12:34:43.898826 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.stg_sale"
+[0m12:34:43.900827 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_sale: BEGIN
+[0m12:34:43.900827 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:34:43.901821 [debug] [Thread-4 (]: Using duckdb connection "model.wwi_duckdb.stg_paymentmethod"
+[0m12:34:43.901821 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_paymentmethod: BEGIN
+[0m12:34:43.902822 [debug] [Thread-2 (]: Using duckdb connection "model.wwi_duckdb.stg_stockitem"
+[0m12:34:43.902822 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m12:34:43.903994 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m12:34:43.903994 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_stockitem: BEGIN
+[0m12:34:43.905011 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.stg_sale"
+[0m12:34:43.906015 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m12:34:43.907009 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m12:34:43.907009 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_sale: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_sale"} */
+
+  
+  create view "WWI"."main"."stg_sale__dbt_tmp" as (
+    with source as (
+    select * from "WWI"."main"."Sale"
+),
+renamed as (
+    select
+        "Sale Key" AS sale_key,
+        "City Key" AS city_key,
+        "Customer Key" AS customer_key,
+        "Bill To Customer Key" AS bill_to_customer_key,
+        "Stock Item Key" AS stock_item_key,
+        "Invoice Date Key" AS invoice_date_key,
+        "Delivery Date Key" AS delivery_date_key,
+        "Salesperson Key" AS salesperson_key,
+        "WWI Invoice ID" AS wwi_invoice_id,
+        "Description" AS description,
+        "Package" AS package,
+        "Quantity" AS quantity,
+        "Unit Price" AS unit_price,
+        "Tax Rate" AS tax_rate,
+        "Total Excluding Tax" AS total_excluding_tax,
+        "Tax Amount" AS tax_amount,
+        "Profit" AS profit,
+        "Total Including Tax" AS total_including_tax,
+        "Total Dry Items" AS total_dry_items,
+        "Total Chiller Items" AS total_chiller_items,
+        "Lineage Key" AS lineage_key
+    from source
+)
+select * from renamed
+  );
+
+[0m12:34:43.908008 [debug] [Thread-4 (]: Using duckdb connection "model.wwi_duckdb.stg_paymentmethod"
+[0m12:34:43.909010 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m12:34:43.910005 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_paymentmethod: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_paymentmethod"} */
+
+  
+  create view "WWI"."main"."stg_paymentmethod__dbt_tmp" as (
+    with source as (
+    select * from "WWI"."main"."PaymentMethod"
+),
+renamed as (
+    select
+        "Payment Method Key" AS payment_method_key,
+        "WWI Payment Method ID" AS wwi_payment_method_id,
+        "Payment Method" AS payment_method,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key
+    from source
+)
+select * from renamed
+  );
+
+[0m12:34:43.911005 [debug] [Thread-2 (]: Using duckdb connection "model.wwi_duckdb.stg_stockitem"
+[0m12:34:43.911005 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m12:34:43.912001 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_stockitem: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_stockitem"} */
+
+  
+  create view "WWI"."main"."stg_stockitem__dbt_tmp" as (
+    with source as (
+    select * from "WWI"."main"."StockItem"
+),
+renamed as (
+    select
+        "Stock Item Key" AS stock_item_key,
+        "WWI Stock Item ID" AS wwi_stock_item_id,
+        "Stock Item" AS stock_item,
+        "Color" AS color,
+        "Selling Package" AS selling_package,
+        "Buying Package" AS buying_package,
+        "Brand" AS brand,
+        "Size" AS size,
+        "Lead Time Days" AS lead_time_days,
+        "Quantity Per Outer" AS quantity_per_outer,
+        "Is Chiller Stock" AS is_chiller_stock,
+        "Barcode" AS barcode,
+        "Tax Rate" AS tax_rate,
+        "Unit Price" AS unit_price,
+        "Recommended Retail Price" AS recommended_retail_price,
+        "Typical Weight Per Unit" AS typical_weight_per_unit,
+        "Photo" AS photo,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key
+    from source
+)
+select * from renamed
+  );
+
+[0m12:34:43.912001 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m12:34:43.916517 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.stg_sale"
+[0m12:34:43.919523 [debug] [Thread-4 (]: Using duckdb connection "model.wwi_duckdb.stg_paymentmethod"
+[0m12:34:43.920594 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m12:34:43.920594 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_sale: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_sale"} */
+alter view "WWI"."main"."stg_sale__dbt_tmp" rename to "stg_sale"
+[0m12:34:43.921595 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_paymentmethod: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_paymentmethod"} */
+alter view "WWI"."main"."stg_paymentmethod__dbt_tmp" rename to "stg_paymentmethod"
+[0m12:34:43.925595 [debug] [Thread-2 (]: Using duckdb connection "model.wwi_duckdb.stg_stockitem"
+[0m12:34:43.926605 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_stockitem: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_stockitem"} */
+alter view "WWI"."main"."stg_stockitem__dbt_tmp" rename to "stg_stockitem"
+[0m12:34:43.926605 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:34:43.927595 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m12:34:43.929593 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_sale: COMMIT
+[0m12:34:43.929593 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m12:34:43.931593 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_paymentmethod: COMMIT
+[0m12:34:43.931593 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.stg_sale"
+[0m12:34:43.933594 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_stockitem: COMMIT
+[0m12:34:43.933594 [debug] [Thread-4 (]: Using duckdb connection "model.wwi_duckdb.stg_paymentmethod"
+[0m12:34:43.934598 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_sale: COMMIT
+[0m12:34:43.934598 [debug] [Thread-2 (]: Using duckdb connection "model.wwi_duckdb.stg_stockitem"
+[0m12:34:43.934598 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_paymentmethod: COMMIT
+[0m12:34:43.936104 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_stockitem: COMMIT
+[0m12:34:43.938112 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m12:34:43.939113 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m12:34:43.941626 [debug] [Thread-1 (]: Using duckdb connection "model.wwi_duckdb.stg_sale"
+[0m12:34:43.942633 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m12:34:43.945637 [debug] [Thread-4 (]: Using duckdb connection "model.wwi_duckdb.stg_paymentmethod"
+[0m12:34:43.946636 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_sale: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_sale"} */
+
+      drop view if exists "WWI"."main"."stg_sale__dbt_backup" cascade
+    
+[0m12:34:43.948632 [debug] [Thread-2 (]: Using duckdb connection "model.wwi_duckdb.stg_stockitem"
+[0m12:34:43.949635 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_paymentmethod: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_paymentmethod"} */
+
+      drop view if exists "WWI"."main"."stg_paymentmethod__dbt_backup" cascade
+    
+[0m12:34:43.949635 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_stockitem: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "wwi_duckdb", "target_name": "dev", "node_id": "model.wwi_duckdb.stg_stockitem"} */
+
+      drop view if exists "WWI"."main"."stg_stockitem__dbt_backup" cascade
+    
+[0m12:34:43.950632 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m12:34:43.950632 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m12:34:43.952632 [debug] [Thread-1 (]: On model.wwi_duckdb.stg_sale: Close
+[0m12:34:43.952632 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m12:34:43.954820 [debug] [Thread-4 (]: On model.wwi_duckdb.stg_paymentmethod: Close
+[0m12:34:43.955818 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C765C740>]}
+[0m12:34:43.957819 [debug] [Thread-2 (]: On model.wwi_duckdb.stg_stockitem: Close
+[0m12:34:43.958828 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C7647DA0>]}
+[0m12:34:43.958828 [info ] [Thread-1 (]: 6 of 7 OK created sql view model main.stg_sale ................................. [[32mOK[0m in 0.09s]
+[0m12:34:43.959814 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '169b6bae-76d6-4c17-b999-927c539860b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C75262A0>]}
+[0m12:34:43.960812 [info ] [Thread-4 (]: 5 of 7 OK created sql view model main.stg_paymentmethod ........................ [[32mOK[0m in 0.10s]
+[0m12:34:43.961814 [debug] [Thread-1 (]: Finished running node model.wwi_duckdb.stg_sale
+[0m12:34:43.963816 [debug] [Thread-4 (]: Finished running node model.wwi_duckdb.stg_paymentmethod
+[0m12:34:43.962815 [info ] [Thread-2 (]: 7 of 7 OK created sql view model main.stg_stockitem ............................ [[32mOK[0m in 0.09s]
+[0m12:34:43.964813 [debug] [Thread-2 (]: Finished running node model.wwi_duckdb.stg_stockitem
+[0m12:34:43.967816 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:34:43.967816 [debug] [MainThread]: On master: BEGIN
+[0m12:34:43.967816 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:34:43.969331 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:34:43.969331 [debug] [MainThread]: On master: COMMIT
+[0m12:34:43.970345 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:34:43.970345 [debug] [MainThread]: On master: COMMIT
+[0m12:34:43.971343 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:34:43.971343 [debug] [MainThread]: On master: Close
+[0m12:34:43.971343 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:34:43.972343 [debug] [MainThread]: Connection 'create_WWI_main' was properly closed.
+[0m12:34:43.972343 [debug] [MainThread]: Connection 'list_WWI_main' was properly closed.
+[0m12:34:43.972343 [debug] [MainThread]: Connection 'model.wwi_duckdb.stg_sale' was properly closed.
+[0m12:34:43.972343 [debug] [MainThread]: Connection 'model.wwi_duckdb.stg_stockitem' was properly closed.
+[0m12:34:43.973858 [debug] [MainThread]: Connection 'model.wwi_duckdb.stg_date' was properly closed.
+[0m12:34:43.973858 [debug] [MainThread]: Connection 'model.wwi_duckdb.stg_paymentmethod' was properly closed.
+[0m12:34:43.974882 [info ] [MainThread]: 
+[0m12:34:43.974882 [info ] [MainThread]: Finished running 7 view models in 0 hours 0 minutes and 0.48 seconds (0.48s).
+[0m12:34:43.976873 [debug] [MainThread]: Command end result
+[0m12:34:44.006070 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\manifest.json
+[0m12:34:44.009069 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\semantic_manifest.json
+[0m12:34:44.017589 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\storl\Desktop\WWI\wwi_duckdb\target\run_results.json
+[0m12:34:44.017589 [info ] [MainThread]: 
+[0m12:34:44.018590 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:34:44.018590 [info ] [MainThread]: 
+[0m12:34:44.019588 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m12:34:44.020653 [debug] [MainThread]: Command `dbt run` succeeded at 12:34:44.019588 after 2.93 seconds
+[0m12:34:44.020653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C41F8140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C7613E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C7046CC0>]}
+[0m12:34:44.020653 [debug] [MainThread]: Flushing usage events
+[0m12:34:46.206532 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:17:33.171748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE0ABA7B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE0CFC7D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE0CFC7C50>]}
+
+
+============================== 07:17:33.188314 | f1130753-3cde-4f52-b46a-4d0c92269601 ==============================
+[0m07:17:33.188314 [info ] [MainThread]: Running with dbt=1.11.7
+[0m07:17:33.190835 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'invocation_command': 'dbt ', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\storl\\Desktop\\WWI\\wwi_duckdb\\logs'}
+[0m07:17:33.203768 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `seeds` found at `wwi_duckdb.seeds` in file
+`c:\Users\storl\Desktop\WWI\wwi_duckdb\dbt_project.yml`. Hierarchical config
+values without a '+' prefix are deprecated in dbt_project.yml.
+[0m07:17:33.206244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f1130753-3cde-4f52-b46a-4d0c92269601', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE0CFD6650>]}
+[0m07:17:33.637200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f1130753-3cde-4f52-b46a-4d0c92269601', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE0D0C9BF0>]}
+[0m07:17:33.685553 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m07:17:33.687611 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m07:17:33.688709 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m07:17:33.691163 [debug] [MainThread]: Command `cli deps` succeeded at 07:17:33.690331 after 1.18 seconds
+[0m07:17:33.691970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE0CF46050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE0D374050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE0CE3F2F0>]}
+[0m07:17:33.692685 [debug] [MainThread]: Flushing usage events
+[0m07:17:37.944900 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:57:25.868329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029581137B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029583567D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029583567C50>]}
+
+
+============================== 07:57:25.875545 | d6cad392-6ef6-454b-97a7-b7aabb0fcfe1 ==============================
+[0m07:57:25.875545 [info ] [MainThread]: Running with dbt=1.11.7
+[0m07:57:25.876451 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt ', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\storl\\Desktop\\WWI\\wwi_duckdb\\logs'}
+[0m07:57:25.881013 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `seeds` found at `wwi_duckdb.seeds` in file
+`c:\Users\storl\Desktop\WWI\wwi_duckdb\dbt_project.yml`. Hierarchical config
+values without a '+' prefix are deprecated in dbt_project.yml.
+[0m07:57:25.881666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd6cad392-6ef6-454b-97a7-b7aabb0fcfe1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029583576650>]}
+[0m07:57:26.042197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd6cad392-6ef6-454b-97a7-b7aabb0fcfe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029583669BF0>]}
+[0m07:57:26.099656 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m07:57:26.101114 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m07:57:26.101905 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m07:57:26.102688 [debug] [MainThread]: Command `cli deps` succeeded at 07:57:26.102572 after 0.43 seconds
+[0m07:57:26.103017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295834E6050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295838C4050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002958240F2F0>]}
+[0m07:57:26.103381 [debug] [MainThread]: Flushing usage events
+[0m07:57:29.625498 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:58:50.502610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7D7AE7B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7D9F17D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7D9F17C50>]}
+
+
+============================== 09:58:50.511030 | 302c0384-0edf-477f-8f06-5fc86b882eab ==============================
+[0m09:58:50.511030 [info ] [MainThread]: Running with dbt=1.11.7
+[0m09:58:50.511990 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'invocation_command': 'dbt ', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\storl\\Desktop\\WWI\\wwi_duckdb\\logs'}
+[0m09:58:50.516442 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `seeds` found at `wwi_duckdb.seeds` in file
+`c:\Users\storl\Desktop\WWI\wwi_duckdb\dbt_project.yml`. Hierarchical config
+values without a '+' prefix are deprecated in dbt_project.yml.
+[0m09:58:50.517157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '302c0384-0edf-477f-8f06-5fc86b882eab', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7D9F26650>]}
+[0m09:58:50.673736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '302c0384-0edf-477f-8f06-5fc86b882eab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7DA019BF0>]}
+[0m09:58:50.730443 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:58:50.731715 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:58:50.732307 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m09:58:50.733030 [debug] [MainThread]: Command `cli deps` succeeded at 09:58:50.732917 after 0.47 seconds
+[0m09:58:50.733364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7D9E92050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7DA234050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7D8DBF2F0>]}
+[0m09:58:50.733703 [debug] [MainThread]: Flushing usage events
+[0m09:58:50.922872 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:42:25.424328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6F5233B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6F7657D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6F7657C50>]}
+
+
+============================== 10:42:25.433556 | 7acf6482-a695-4356-8390-ee5b658ed949 ==============================
+[0m10:42:25.433556 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:42:25.434872 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt ', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\storl\\Desktop\\WWI\\wwi_duckdb\\logs'}
+[0m10:42:25.439268 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `seeds` found at `wwi_duckdb.seeds` in file
+`c:\Users\storl\Desktop\WWI\wwi_duckdb\dbt_project.yml`. Hierarchical config
+values without a '+' prefix are deprecated in dbt_project.yml.
+[0m10:42:25.439793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '7acf6482-a695-4356-8390-ee5b658ed949', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6F7666650>]}
+[0m10:42:25.604418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7acf6482-a695-4356-8390-ee5b658ed949', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6F775DBF0>]}
+[0m10:42:25.660679 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:42:25.662291 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:42:25.662941 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m10:42:25.663858 [debug] [MainThread]: Command `cli deps` succeeded at 10:42:25.663670 after 0.49 seconds
+[0m10:42:25.664234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6F75D6050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6F79D4050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6F64FF2F0>]}
+[0m10:42:25.664598 [debug] [MainThread]: Flushing usage events
+[0m10:42:26.019808 [debug] [MainThread]: An error was encountered while trying to flush usage events

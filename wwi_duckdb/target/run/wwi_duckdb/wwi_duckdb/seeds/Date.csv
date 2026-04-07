@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "WWI"."main"."Date" ("Date" date,"Day Number" integer,"Day" integer,"Month" text,"Short Month" text,"Calendar Month Number" integer,"Calendar Month Label" text,"Calendar Year" integer,"Calendar Year Label" text,"Fiscal Month Number" integer,"Fiscal Month Label" text,"Fiscal Year" integer,"Fiscal Year Label" text,"ISO Week Number" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "WWI"."main"."Date" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\Date.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

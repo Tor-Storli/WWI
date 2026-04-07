@@ -1,0 +1,47 @@
+version: 1
+
+models:
+  - name: stg_city
+    columns:
+      - name: "City Key"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_customer
+    columns:
+      - name: "Customer Key"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_date
+    columns:
+      - name: "Date Key"
+        tests:
+          - unique
+          - not_null
+  - name: stg_employee
+    columns:
+      - name: "Employee Key"
+        tests:
+          - unique
+          - not_null
+      - name: "Is Salesperson"
+        tests:
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+
+  - name: stg_paymentmethod
+    columns:
+      - name: "Payment Method Key"
+        tests:
+          - unique
+          - not_null
+  - name: stg_stockitem
+    columns:
+      - name: "Stock Item Key"
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "WWI"."main"."Sale" ("Sale Key" integer,"City Key" integer,"Customer Key" integer,"Bill To Customer Key" integer,"Stock Item Key" integer,"Invoice Date Key" date,"Delivery Date Key" date,"Salesperson Key" integer,"WWI Invoice ID" integer,"Description" text,"Package" text,"Quantity" integer,"Unit Price" float8,"Tax Rate" integer,"Total Excluding Tax" float8,"Tax Amount" float8,"Profit" float8,"Total Including Tax" float8,"Total Dry Items" integer,"Total Chiller Items" integer,"Lineage Key" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "WWI"."main"."Sale" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\Sale.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

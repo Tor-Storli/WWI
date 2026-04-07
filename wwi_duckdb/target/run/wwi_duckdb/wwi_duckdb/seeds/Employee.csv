@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "WWI"."main"."Employee" ("Employee Key" integer,"WWI Employee ID" integer,"Employee" text,"Preferred Name" text,"Is Salesperson" integer,"Photo" integer,"Valid From" text,"Valid To" text,"Lineage Key" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "WWI"."main"."Employee" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\Employee.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

@@ -1,0 +1,404 @@
+# To create a brand new dbt project
+# ==================================
+# C:\Users\storl\Desktop\WWI
+
+Select python interpreter (vanna v3.13.0) Ctrl+Shift+P
+
+# Check Python version (must be 3.9+)
+python --version
+
+# Check pip is available
+pip --version
+
+# Check Git is installed
+git --version
+
+# Navigate to your projects folder if not already there (adjust path as needed)
+# cd C:\Users\storl\Desktop\WWI
+
+# Create a folder for your dbt work
+mkdir wwi_duckdb
+cd wwi_duckdb
+
+# Create the virtual environment (named "venv")
+python -m venv venv
+
+# Using PowerShell terminal
+venv\Scripts\Activate.ps1
+
+# If you get an error about scripts being disabled in PowerShell, run this first:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# upgrade pip before installing packages 
+python -m pip install --upgrade pip
+
+# Install dbt-core and the DuckDB adapter
+pip install dbt-core dbt-duckdb
+
+# Verify the installation
+dbt --version
+
+# Build dbt-project from Scratch with dbt init in the current wwi_duckdb folder
+dbt init wwi_duckdb
+
+
+# Configure profiles.yml
+# By default, dbt looks for profiles.yml in ~/.dbt/ (i.e. C:\Users\storl\.dbt\profiles.yml). 
+# Open that file and confirm it looks like this — or create it if it doesn’t exist:
+
+wwi_duckdb:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: WWI.duckdb
+      threads: 4
+      schema: main
+
+# Add  wwi_duckdb seed data (CSV files)
+# Create a seeds/ folder in your project and add the raw CSV files.
+
+seeds/City.csv
+seeds/Customer.csv
+seeds/Date.csv
+seeds/Employee.csv
+seeds/PaymentMethod.csv
+seeds/Sale.csv
+seeds/StockItem.csv
+
+#Verify the connection
+dbt debug
+
+
+C:\Users\storl\Desktop\WWI\wwi_duckdb
+      - "C:\Users\storl\Desktop\WWI\wwi_duckdb\WWI.duckdb"
+	"C:\Users\storl\Desktop\WWI\wwi_duckdb\logs"
+	"C:\Users\storl\Desktop\WWI\wwi_duckdb\venv"
+	"C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb"
+	"C:\Users\storl\Desktop\WWI\wwi_duckdb\dbt_project.yml"
+      	       -"C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb\models"
+		"C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb\seeds"
+		"C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb\snapshots"
+		"C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb\tests"
+		"C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb\.gitignore"
+		"C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb\profiles.yml"
+		"C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb\README.md"
+		"C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb\analyses"
+		"C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb\macros"	
+
+# Navigate to the wwi_duckdb folder were our project is
+# and create two new folders to hold models
+cd C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb
+mkdir staging
+mkdir production
+
+# dbt_project.yml
+# ---------------
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: "wwi_duckdb"
+version: "1.0.0"
+
+# This setting configures which "profile" dbt uses for this project.
+profile: "wwi_duckdb"
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["wwi_duckdb/models"]
+analysis-paths: ["wwi_duckdb/analyses"]
+test-paths: ["wwi_duckdb/tests"]
+seed-paths: ["wwi_duckdb/seeds"]
+macro-paths: ["wwi_duckdb/macros"]
+snapshot-paths: ["wwi_duckdb/snapshots"]
+
+clean-targets: # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+  - "logs"
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  wwi_duckdb:
+    +materialized: table
+    seeds:
+    staging:
+      +materialized: view
+      +docs:
+        node_color: "silver"
+    production:
+      +materialized: view
+      +docs:
+        node_color: "silver"
+    +docs:
+      node_color: "gold"
+
+
+# Add a schema.yml file to the staging folder:
+# --------------------------------------------
+version: 1
+
+models:
+  - name: stg_city
+    columns:
+      - name: "City Key"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_customer
+    columns:
+      - name: "Customer Key"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_employee
+    columns:
+      - name: "Employee Key"
+        tests:
+          - unique
+          - not_null
+      - name: "Is Salesperson"  
+        tests:
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+
+  - name: stg_paymentmethod
+    columns:
+      - name: "Payment Method Key"
+        tests:
+          - unique
+          - not_null
+  - name: stg_stockitem
+    columns:
+      - name: "Stock Item Key"
+        tests:
+          - unique
+          - not_null	
+  - name: stg_sale
+    columns:
+      - name: "Sale Key"
+        tests:
+          - unique
+          - not_null		  		  	  
+
+
+# Models - staging
+# -----------------
+
+# stg_city
+# --------
+with source as (
+    select * from {{ ref('City') }}
+),
+
+renamed as (
+    select
+        "City Key" AS city_key,
+        "WWI City ID" AS wwi_city_id,
+        "City" AS city,
+        "State Province" AS state_province,
+        "Country" AS country,
+        "Continent" AS continent,
+        "Sales Territory" AS sales_territory,
+        "Region" AS region,
+        "Subregion" AS subregion,
+        "Location" AS location,
+        "Latest Recorded Population" AS latest_recorded_population,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key
+    from source
+)
+select * from renamed
+
+
+# stg_customer
+# --------
+with source as (
+    select * from {{ ref('Customer') }}
+),
+
+renamed as (
+    select
+        "Customer Key" AS customer_key,
+        "WWI Customer ID" AS wwi_customer_id,
+        "Customer" AS customer,
+        "Bill To Customer" AS bill_to_customer,
+        "Category" AS category,
+        "Buying Group" AS buying_group,
+        "Primary Contact" AS primary_contact,
+        "Postal Code" AS postal_code,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key
+    from source
+
+)
+select * from renamed
+
+
+# stg_date
+# --------
+with source as (
+    select * from {{ ref('Date') }}
+),
+renamed as (
+    select
+        "Date" AS date,
+        "Day Number" AS day_number,
+        "Day" AS day,
+        "Month" AS month,
+        "Short Month" AS short_month,
+        "Calendar Month Number" AS calendar_month_number,
+        "Calendar Month Label" AS calendar_month_label,
+        "Calendar Year" AS calendar_year,
+        "Calendar Year Label" AS calendar_year_label,
+        "Fiscal Month Number" AS fiscal_month_number,
+        "Fiscal Month Label" AS fiscal_month_label,
+        "Fiscal Year" AS fiscal_year,
+        "Fiscal Year Label" AS fiscal_year_label,
+        "ISO Week Number" AS iso_week_number
+    from source
+)
+select * from renamed
+
+
+# stg_employee
+# ------------
+with source as (
+    select * from {{ ref('Employee') }}
+),
+renamed as (
+    select
+        "Employee Key" AS employee_key,
+        "WWI Employee ID" AS wwi_employee_id,
+        "Employee" AS employee,
+        "Preferred Name" AS preferred_name,
+        "Is Salesperson" AS is_salesperson,
+        "Photo" AS photo,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key
+    from source
+)
+select * from renamed
+
+
+# stg_paymentmethod
+# -----------------
+with source as (
+    select * from {{ ref('PaymentMethod') }}
+),
+renamed as (
+    select
+        "Payment Method Key" AS payment_method_key,
+        "WWI Payment Method ID" AS wwi_payment_method_id,
+        "Payment Method" AS payment_method,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key
+    from source
+)
+select * from renamed
+
+
+# stg_sale
+# --------
+with source as (
+    select * from {{ ref('Sale') }}
+),
+renamed as (
+    select
+        "Sale Key" AS sale_key,
+        "City Key" AS city_key,
+        "Customer Key" AS customer_key,
+        "Bill To Customer Key" AS bill_to_customer_key,
+        "Stock Item Key" AS stock_item_key,
+        "Invoice Date Key" AS invoice_date_key,
+        "Delivery Date Key" AS delivery_date_key,
+        "Salesperson Key" AS salesperson_key,
+        "WWI Invoice ID" AS wwi_invoice_id,
+        "Description" AS description,
+        "Package" AS package,
+        "Quantity" AS quantity,
+        "Unit Price" AS unit_price,
+        "Tax Rate" AS tax_rate,
+        "Total Excluding Tax" AS total_excluding_tax,
+        "Tax Amount" AS tax_amount,
+        "Profit" AS profit,
+        "Total Including Tax" AS total_including_tax,
+        "Total Dry Items" AS total_dry_items,
+        "Total Chiller Items" AS total_chiller_items,
+        "Lineage Key" AS lineage_key
+    from source
+)
+select * from renamed
+
+
+# stg_stockitem
+# -------------
+with source as (
+    select * from {{ ref('StockItem') }}
+),
+renamed as (
+    select
+        "Stock Item Key" AS stock_item_key,
+        "WWI Stock Item ID" AS wwi_stock_item_id,
+        "Stock Item" AS stock_item,
+        "Color" AS color,
+        "Selling Package" AS selling_package,
+        "Buying Package" AS buying_package,
+        "Brand" AS brand,
+        "Size" AS size,
+        "Lead Time Days" AS lead_time_days,
+        "Quantity Per Outer" AS quantity_per_outer,
+        "Is Chiller Stock" AS is_chiller_stock,
+        "Barcode" AS barcode,
+        "Tax Rate" AS tax_rate,
+        "Unit Price" AS unit_price,
+        "Recommended Retail Price" AS recommended_retail_price,
+        "Typical Weight Per Unit" AS typical_weight_per_unit,
+        "Photo" AS photo,
+        "Valid From" AS valid_from,
+        "Valid To" AS valid_to,
+        "Lineage Key" AS lineage_key
+    from source
+)
+select * from renamed
+
+# Fix a problematic Sale.csv file 
+# by running this python file:
+# -------------------------------
+
+(venv) PS C:\Users\storl\Desktop\WWI\wwi_duckdb> python fix_fact_sales_csv_file.py
+
+# Note: 1) Delete original Sale.csv
+#       2) Rename Sale_fixed to Sale.csv 
+#       3) Run the commands below
+
+# Run dbt seed and dbt run
+# ------------------------
+
+dbt seed
+ .open "C:/Users/storl/Desktop/WWI/wwi_duckdb/wwi_duckdb/WWI.duckdb";
+ show tables;
+.exit
+
+dbt run
+dbt docs generate
+dbt docs serve

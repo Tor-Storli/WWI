@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "WWI"."main"."City" ("City Key" integer,"WWI City ID" integer,"City" text,"State Province" text,"Country" text,"Continent" text,"Sales Territory" text,"Region" text,"Subregion" text,"Location" text,"Latest Recorded Population" integer,"Valid From" text,"Valid To" text,"Lineage Key" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "WWI"."main"."City" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\City.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

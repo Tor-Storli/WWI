@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "WWI"."main"."PaymentMethod" ("Payment Method Key" integer,"WWI Payment Method ID" integer,"Payment Method" text,"Valid From" text,"Valid To" text,"Lineage Key" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "WWI"."main"."PaymentMethod" FROM 'C:\Users\storl\Desktop\WWI\wwi_duckdb\wwi_duckdb/seeds\PaymentMethod.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
