@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: fct_city_profit
+    description: "The primary fact table for analyzing profitability by geography."
+
+    columns:
+      - name: wwi_city_id
+        description: "The unique identifier for the city."
+        tests:
+          - unique
+          - not_null
+      - name: city_name
+        description: "The name of the city."
+        tests:
+          - not_null
+      - name: total_transactions
+        description: "The total number of transactions in the city."
+        tests:
+          - not_null
+      - name: total_profit
+        description: "Sum of profit for all transactions in this city."
+        tests:
+          - not_null
+      - name: average_profit
+        description: "The average profit per transaction in the city."
+        tests:
+          - not_null
+
+  - name: fct_sale
+    description: "The primary fact table for analyzing sale transactions."
+    columns:
+      - name: sale_key
+        description: "The unique identifier for the fct_sale table."
+        tests:
+          - unique
+          - not_null

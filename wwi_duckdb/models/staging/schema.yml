@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: stg_city
+    columns:
+      - name: city_key # ✅ Match your renamed column
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_customer
+    columns:
+      - name: customer_key # ✅ Match your renamed column
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_date
+    columns:
+      - name: date # ✅ Match your renamed column
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_employee
+    columns:
+      - name: employee_key # ✅ Match your renamed column
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_paymentmethod
+    columns:
+      - name: payment_method_key # ✅ Match your renamed column
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_stockitem
+    columns:
+      - name: stock_item_key # ✅ Match your renamed column
+        tests:
+          - unique
+          - not_null

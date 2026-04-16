@@ -1,0 +1,9 @@
+snapshots:
+  - name: stg_snapshot
+    relation: ref('stg_stockitem')
+    config:
+      schema: snapshots
+      unique_key: stock_item_key
+      strategy: timestamp # or 'check'
+      updated_at: valid_from # required for timestamp strategy
+      hard_deletes: new_record # optional, defaults to false

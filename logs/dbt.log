@@ -1,0 +1,264 @@
+[0m11:33:31.246252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DF9CF3860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DF9C10B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DF9C10BF0>]}
+
+
+============================== 11:33:31.251235 | 864ed781-dd72-415e-a849-46af4fe09b27 ==============================
+[0m11:33:31.251235 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:33:31.251235 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\storl\\Desktop\\WWI\\logs'}
+[0m11:33:31.276847 [info ] [MainThread]: dbt version: 1.11.7
+[0m11:33:31.277868 [info ] [MainThread]: python version: 3.12.2
+[0m11:33:31.277868 [info ] [MainThread]: python path: C:\Users\storl\Desktop\WWI\wwi_duckdb\venv\Scripts\python.exe
+[0m11:33:31.278902 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m11:33:31.430061 [info ] [MainThread]: Using profiles dir at C:\Users\storl\.dbt
+[0m11:33:31.430970 [info ] [MainThread]: Using profiles.yml file at C:\Users\storl\.dbt\profiles.yml
+[0m11:33:31.431988 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\storl\Desktop\WWI\dbt_project.yml
+[0m11:33:31.433966 [info ] [MainThread]: adapter type: duckdb
+[0m11:33:31.433966 [info ] [MainThread]: adapter version: 1.10.1
+[0m11:33:31.564286 [info ] [MainThread]: Configuration:
+[0m11:33:31.565373 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:33:31.566367 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:33:31.567435 [info ] [MainThread]: Required dependencies:
+[0m11:33:31.568335 [debug] [MainThread]: Executing "git --help"
+[0m11:33:31.624189 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:33:31.625187 [debug] [MainThread]: STDERR: "b''"
+[0m11:33:31.626187 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:33:31.627184 [info ] [MainThread]: Connection:
+[0m11:33:31.627184 [info ] [MainThread]:   database: WWI
+[0m11:33:31.628183 [info ] [MainThread]:   schema: main
+[0m11:33:31.628183 [info ] [MainThread]:   path: WWI.duckdb
+[0m11:33:31.629186 [info ] [MainThread]:   config_options: None
+[0m11:33:31.629186 [info ] [MainThread]:   extensions: None
+[0m11:33:31.630249 [info ] [MainThread]:   settings: {}
+[0m11:33:31.630249 [info ] [MainThread]:   external_root: .
+[0m11:33:31.630249 [info ] [MainThread]:   use_credential_provider: None
+[0m11:33:31.631182 [info ] [MainThread]:   attach: None
+[0m11:33:31.631182 [info ] [MainThread]:   filesystems: None
+[0m11:33:31.632180 [info ] [MainThread]:   remote: None
+[0m11:33:31.632180 [info ] [MainThread]:   plugins: None
+[0m11:33:31.633267 [info ] [MainThread]:   disable_transactions: False
+[0m11:33:31.633267 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m11:33:31.849273 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m11:33:31.906380 [debug] [MainThread]: Using duckdb connection "debug"
+[0m11:33:31.906380 [debug] [MainThread]: On debug: select 1 as id
+[0m11:33:31.906380 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:33:31.921675 [debug] [MainThread]: SQL status: OK in 0.015 seconds
+[0m11:33:31.921675 [debug] [MainThread]: On debug: Close
+[0m11:33:31.923284 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:33:31.923284 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:33:31.925294 [debug] [MainThread]: Command `dbt debug` succeeded at 11:33:31.925294 after 0.91 seconds
+[0m11:33:31.926452 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:33:31.926452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DF96F58B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DF9BA13A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DFB24BFE0>]}
+[0m11:33:31.927460 [debug] [MainThread]: Flushing usage events
+[0m11:33:37.148146 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:07:02.525630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9D0EDFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9ED20E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9ED224E0>]}
+
+
+============================== 12:07:02.533651 | f72f2922-b2aa-45c0-ad26-d409014e0722 ==============================
+[0m12:07:02.533651 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:07:02.534628 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt seed', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\storl\\Desktop\\WWI\\logs'}
+[0m12:07:02.855657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f72f2922-b2aa-45c0-ad26-d409014e0722', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9F280920>]}
+[0m12:07:02.930505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f72f2922-b2aa-45c0-ad26-d409014e0722', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9F251AF0>]}
+[0m12:07:02.933508 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:07:03.159033 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m12:07:03.161030 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:07:03.161030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f72f2922-b2aa-45c0-ad26-d409014e0722', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9F1921B0>]}
+[0m12:07:04.021602 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.wwi_duckdb.staging
+- models.wwi_duckdb.production
+- models.wwi_duckdb
+[0m12:07:04.027598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f72f2922-b2aa-45c0-ad26-d409014e0722', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9EE59F40>]}
+[0m12:07:04.083294 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\target\manifest.json
+[0m12:07:04.086301 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\target\semantic_manifest.json
+[0m12:07:04.149103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f72f2922-b2aa-45c0-ad26-d409014e0722', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9F5952E0>]}
+[0m12:07:04.150104 [info ] [MainThread]: Found 475 macros
+[0m12:07:04.150104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f72f2922-b2aa-45c0-ad26-d409014e0722', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9F572360>]}
+[0m12:07:04.151103 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m12:07:04.152608 [debug] [MainThread]: Command end result
+[0m12:07:04.173263 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\target\manifest.json
+[0m12:07:04.176275 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\target\semantic_manifest.json
+[0m12:07:04.182271 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\storl\Desktop\WWI\target\run_results.json
+[0m12:07:04.182271 [info ] [MainThread]: 
+[0m12:07:04.183271 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:07:04.183271 [info ] [MainThread]: 
+[0m12:07:04.183271 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=0
+[0m12:07:04.184778 [debug] [MainThread]: Command `dbt seed` succeeded at 12:07:04.184778 after 1.88 seconds
+[0m12:07:04.184778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9D0EDFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9F283F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A9F2B5250>]}
+[0m12:07:04.184778 [debug] [MainThread]: Flushing usage events
+[0m12:07:12.310620 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:12:07.799286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002022E233650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202324E7A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002022FDA2FC0>]}
+
+
+============================== 12:12:07.804802 | 4e831fc3-f641-4eff-b6bf-26b80c8f0f15 ==============================
+[0m12:12:07.804802 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:12:07.805791 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\storl\\Desktop\\WWI\\logs'}
+[0m12:12:07.829824 [info ] [MainThread]: dbt version: 1.11.7
+[0m12:12:07.829824 [info ] [MainThread]: python version: 3.12.2
+[0m12:12:07.830818 [info ] [MainThread]: python path: C:\Users\storl\Desktop\WWI\wwi_duckdb\venv\Scripts\python.exe
+[0m12:12:07.831818 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:12:07.966769 [info ] [MainThread]: Using profiles dir at C:\Users\storl\.dbt
+[0m12:12:07.967767 [info ] [MainThread]: Using profiles.yml file at C:\Users\storl\.dbt\profiles.yml
+[0m12:12:07.967767 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\storl\Desktop\WWI\dbt_project.yml
+[0m12:12:07.970289 [info ] [MainThread]: adapter type: duckdb
+[0m12:12:07.971280 [info ] [MainThread]: adapter version: 1.10.1
+[0m12:12:08.091952 [info ] [MainThread]: Configuration:
+[0m12:12:08.091952 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:12:08.093458 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:12:08.094466 [info ] [MainThread]: Required dependencies:
+[0m12:12:08.094466 [debug] [MainThread]: Executing "git --help"
+[0m12:12:08.143690 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:12:08.144703 [debug] [MainThread]: STDERR: "b''"
+[0m12:12:08.144703 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:12:08.145704 [info ] [MainThread]: Connection:
+[0m12:12:08.146698 [info ] [MainThread]:   database: WWI
+[0m12:12:08.146698 [info ] [MainThread]:   schema: main
+[0m12:12:08.146698 [info ] [MainThread]:   path: WWI.duckdb
+[0m12:12:08.147695 [info ] [MainThread]:   config_options: None
+[0m12:12:08.147695 [info ] [MainThread]:   extensions: None
+[0m12:12:08.148695 [info ] [MainThread]:   settings: {}
+[0m12:12:08.148695 [info ] [MainThread]:   external_root: .
+[0m12:12:08.148695 [info ] [MainThread]:   use_credential_provider: None
+[0m12:12:08.149704 [info ] [MainThread]:   attach: None
+[0m12:12:08.149704 [info ] [MainThread]:   filesystems: None
+[0m12:12:08.150707 [info ] [MainThread]:   remote: None
+[0m12:12:08.150707 [info ] [MainThread]:   plugins: None
+[0m12:12:08.151696 [info ] [MainThread]:   disable_transactions: False
+[0m12:12:08.151696 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:12:08.346553 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m12:12:08.406152 [debug] [MainThread]: Using duckdb connection "debug"
+[0m12:12:08.407153 [debug] [MainThread]: On debug: select 1 as id
+[0m12:12:08.407153 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:12:08.424712 [debug] [MainThread]: SQL status: OK in 0.018 seconds
+[0m12:12:08.425709 [debug] [MainThread]: On debug: Close
+[0m12:12:08.425709 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:12:08.427223 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:12:08.428281 [debug] [MainThread]: Command `dbt debug` succeeded at 12:12:08.428281 after 0.86 seconds
+[0m12:12:08.428281 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:12:08.429237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020232B2EC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020232E820C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002023102EFC0>]}
+[0m12:12:08.429237 [debug] [MainThread]: Flushing usage events
+[0m12:12:20.768525 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:13:02.614782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225C145E000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225BE413E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225C1C04CB0>]}
+
+
+============================== 12:13:02.620294 | 837341bc-d9cb-41d0-9605-a64e95d6c70f ==============================
+[0m12:13:02.620294 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:13:02.621289 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt seed', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\storl\\Desktop\\WWI\\logs'}
+[0m12:13:02.899326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '837341bc-d9cb-41d0-9605-a64e95d6c70f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225C1547290>]}
+[0m12:13:02.970890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '837341bc-d9cb-41d0-9605-a64e95d6c70f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225C3605610>]}
+[0m12:13:02.973392 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:13:03.173687 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m12:13:03.257443 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:13:03.257950 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:13:03.257950 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:13:03.258956 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.wwi_duckdb.production
+- models.wwi_duckdb.staging
+- models.wwi_duckdb
+[0m12:13:03.264511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '837341bc-d9cb-41d0-9605-a64e95d6c70f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225C3739B20>]}
+[0m12:13:03.323520 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\target\manifest.json
+[0m12:13:03.325533 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\target\semantic_manifest.json
+[0m12:13:03.347546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '837341bc-d9cb-41d0-9605-a64e95d6c70f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225C3AA3230>]}
+[0m12:13:03.347546 [info ] [MainThread]: Found 475 macros
+[0m12:13:03.348544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '837341bc-d9cb-41d0-9605-a64e95d6c70f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225C373AE70>]}
+[0m12:13:03.350561 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m12:13:03.354862 [debug] [MainThread]: Command end result
+[0m12:13:03.374413 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\target\manifest.json
+[0m12:13:03.377415 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\target\semantic_manifest.json
+[0m12:13:03.382411 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\storl\Desktop\WWI\target\run_results.json
+[0m12:13:03.383411 [info ] [MainThread]: 
+[0m12:13:03.383411 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:13:03.384465 [info ] [MainThread]: 
+[0m12:13:03.384465 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=0
+[0m12:13:03.385970 [debug] [MainThread]: Command `dbt seed` succeeded at 12:13:03.385970 after 0.99 seconds
+[0m12:13:03.386978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225C31A0410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225C3956FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225C39111C0>]}
+[0m12:13:03.386978 [debug] [MainThread]: Flushing usage events
+[0m12:13:10.177361 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:14:08.157904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DDEBD6900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DE1565F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DE2F69B80>]}
+
+
+============================== 12:14:08.165442 | f32aa219-9697-44c9-928d-93c94fdf3af3 ==============================
+[0m12:14:08.165442 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:14:08.165442 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt seed', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\storl\\Desktop\\WWI\\logs'}
+[0m12:14:08.458784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f32aa219-9697-44c9-928d-93c94fdf3af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DE0B89EB0>]}
+[0m12:14:08.531694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f32aa219-9697-44c9-928d-93c94fdf3af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DE1483170>]}
+[0m12:14:08.534716 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:14:08.734497 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m12:14:08.817461 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:14:08.817461 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:14:08.818448 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:14:08.818448 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.wwi_duckdb.production
+- models.wwi_duckdb
+- models.wwi_duckdb.staging
+[0m12:14:08.824572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f32aa219-9697-44c9-928d-93c94fdf3af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DE36AC230>]}
+[0m12:14:08.880695 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\target\manifest.json
+[0m12:14:08.882700 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\target\semantic_manifest.json
+[0m12:14:08.906888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f32aa219-9697-44c9-928d-93c94fdf3af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DE39E2630>]}
+[0m12:14:08.906888 [info ] [MainThread]: Found 475 macros
+[0m12:14:08.907887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f32aa219-9697-44c9-928d-93c94fdf3af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DE39D7890>]}
+[0m12:14:08.909894 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m12:14:08.913389 [debug] [MainThread]: Command end result
+[0m12:14:08.933464 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\target\manifest.json
+[0m12:14:08.935983 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\target\semantic_manifest.json
+[0m12:14:08.941996 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\storl\Desktop\WWI\target\run_results.json
+[0m12:14:08.943538 [info ] [MainThread]: 
+[0m12:14:08.943538 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:14:08.944556 [info ] [MainThread]: 
+[0m12:14:08.944556 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=0
+[0m12:14:08.945553 [debug] [MainThread]: Command `dbt seed` succeeded at 12:14:08.945553 after 1.03 seconds
+[0m12:14:08.945553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DE310A240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DE3625460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DE19B12B0>]}
+[0m12:14:08.946572 [debug] [MainThread]: Flushing usage events
+[0m12:14:16.278762 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:18:15.675821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259F3EE1730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259F42301A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259F05B06E0>]}
+
+
+============================== 12:18:15.680827 | 04429461-6068-4b0f-89af-e02b69584659 ==============================
+[0m12:18:15.680827 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:18:15.681826 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\storl\\Desktop\\WWI\\logs'}
+[0m12:18:16.015375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '04429461-6068-4b0f-89af-e02b69584659', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259F59B1DF0>]}
+[0m12:18:16.101408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '04429461-6068-4b0f-89af-e02b69584659', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259F3F826C0>]}
+[0m12:18:16.105931 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:18:16.347561 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m12:18:16.441813 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:18:16.441813 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:18:16.442813 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:18:16.442813 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.wwi_duckdb.production
+- models.wwi_duckdb
+- models.wwi_duckdb.staging
+[0m12:18:16.451812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '04429461-6068-4b0f-89af-e02b69584659', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259F560A030>]}
+[0m12:18:16.516646 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\target\manifest.json
+[0m12:18:16.519646 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\target\semantic_manifest.json
+[0m12:18:16.545612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '04429461-6068-4b0f-89af-e02b69584659', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259F5DCF2C0>]}
+[0m12:18:16.545612 [info ] [MainThread]: Found 475 macros
+[0m12:18:16.546619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '04429461-6068-4b0f-89af-e02b69584659', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259F5519D00>]}
+[0m12:18:16.548635 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m12:18:16.553755 [debug] [MainThread]: Command end result
+[0m12:18:16.587301 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\storl\Desktop\WWI\target\manifest.json
+[0m12:18:16.591300 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\storl\Desktop\WWI\target\semantic_manifest.json
+[0m12:18:16.599811 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\storl\Desktop\WWI\target\run_results.json
+[0m12:18:16.601812 [debug] [MainThread]: Command `dbt run` succeeded at 12:18:16.601812 after 1.16 seconds
+[0m12:18:16.602811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259F3EE2FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259F592CA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259F55EC2F0>]}
+[0m12:18:16.602811 [debug] [MainThread]: Flushing usage events
+[0m12:18:18.991414 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:57:17.413394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002679F3F3E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267A183FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267A183F9D0>]}
+
+
+============================== 08:57:17.417581 | 3b9e52e6-597a-401e-86ac-dfd1cc089e31 ==============================
+[0m08:57:17.417581 [info ] [MainThread]: Running with dbt=1.11.7
+[0m08:57:17.418362 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\storl\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt snapshot', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m08:57:17.418852 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\storl\Desktop\WWI\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m08:57:17.419700 [debug] [MainThread]: Command `dbt snapshot` failed at 08:57:17.419589 after 0.29 seconds
+[0m08:57:17.420042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267A184E650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267A18C8290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267A06F7570>]}
+[0m08:57:17.420395 [debug] [MainThread]: Flushing usage events
+[0m08:57:17.653450 [debug] [MainThread]: An error was encountered while trying to flush usage events
